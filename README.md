@@ -1,8 +1,12 @@
 # Schematica-Neo
 
+[English](README.en.md)
+
 **Schematica-Neo** 是一个面向 **Minecraft 1.7.10** 的 Schematica 扩展与现代化改进模组，在保留经典投影加载、显示、材料统计和打印功能的基础上，增加了投影编辑、结构文件转换、更灵活的可见范围控制，以及针对 **魔法金属（ManaMetalMod）** 的兼容支持。
 
 本项目主要用于改善大型建筑投影的查看、修改、转换与辅助建造体验。
+
+本模组的部分代码由 AI 编程工具辅助生成、重构、调试和整理，最终实现、功能取舍、测试与发布内容由项目作者负责。AI 工具仅作为开发辅助，项目中的代码和功能仍可能存在错误或未覆盖的边界情况，欢迎通过 Issue 提交反馈。
 
 ## 主要功能
 
@@ -109,12 +113,9 @@ Schematica-Neo 可以将部分高版本结构文件转换为 Minecraft 1.7.10 �
 
 项目包含部分针对 **ManaMetalMod** 的专用兼容：
 
-- 高版本方块到魔法金属方块的转换映射。
+- 高版本方块到魔法金属方块的转换映射，详见 [ManaMetalMod 方块映射表](src/main/resources/assets/schematicaneo/mmm_blocks_reference.txt) 和 [原版方块映射表](src/main/resources/assets/schematicaneo/vanilla_blocks_reference.txt)。
 - 魔法金属特殊方块的预览异常隔离。
-- 魔法金属半砖的特殊元数据规则：
-  - `0`：下半砖
-  - `1`：上半砖
-  - `2`：上下合并的整砖
+- 魔法金属半砖的特殊元数据规则
 - 扩展元数据读取、编辑和保存支持。
 
 这些兼容逻辑仅针对 `manametalmod` 注册域生效，不会改变原版半砖的元数据规则。
