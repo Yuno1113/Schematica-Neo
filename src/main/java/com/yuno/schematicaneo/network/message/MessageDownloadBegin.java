@@ -1,0 +1,53 @@
+package com.yuno.schematicaneo.network.message;
+
+import net.minecraft.item.ItemStack;
+
+import com.yuno.schematicaneo.api.ISchematic;
+import com.yuno.schematicaneo.handler.DownloadHandler;
+import com.yuno.schematicaneo.world.storage.Schematic;
+
+import cpw.mods.fml.common.network.ByteBufUtils;
+import cpw.mods.fml.common.network.simpleimpl.IMessage;
+import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
+import cpw.mods.fml.common.network.simpleimpl.MessageContext;
+import io.netty.buffer.ByteBuf;
+
+public class MessageDownloadBegin implements IMessage, IMessageHandler<MessageDownloadBegin, IMessage> {
+
+    public ItemStack icon;
+    public int width;
+    public int height;
+    public int length;
+
+    public MessageDownloadBegin() {}
+
+    public MessageDownloadBegin(ISchematic schematic) {
+        this.icon = schematic.getIcon();
+        this.width = schematic.getWidth();
+        this.height = schematic.getHeight();
+        this.length = schematic.getLength();
+    }
+
+    @Override
+    public void fromBytes(ByteBuf buf) {
+        this.icon = ByteBufUtils.readItemStack(buf);
+        this.width = buf.readShort();
+        this.height = buf.readShort();
+        this.length = buf.readShort();
+    }
+
+    @Override
+    public void toBytes(ByteBuf buf) {
+        ByteBufUtils.writeItemStack(buf, this.icon);
+        buf.writeShort(this.width);
+        buf.writeShort(this.height);
+        buf.writeShort(this.length);
+    }
+
+    @Override
+    public IMessage onMessage(MessageDownloadBegin message, MessageContext ctx) {
+        DownloadHandler.INSTANCE.schematic = new Schematic(message.icon, message.width, message.height, message.length);
+
+        return new MessageDownloadBeginAck();
+    }
+}

@@ -1,0 +1,101 @@
+package com.yuno.schematicaneo.handler;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import net.minecraft.entity.player.EntityPlayerMP;
+
+import com.yuno.schematicaneo.api.ISchematic;
+import com.yuno.schematicaneo.network.PacketHandler;
+import com.yuno.schematicaneo.network.message.MessageDownloadBegin;
+import com.yuno.schematicaneo.network.message.MessageDownloadChunk;
+import com.yuno.schematicaneo.network.message.MessageDownloadEnd;
+import com.yuno.schematicaneo.network.transfer.SchematicTransfer;
+import com.yuno.schematicaneo.reference.Constants;
+import com.yuno.schematicaneo.reference.Reference;
+
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent;
+
+public class DownloadHandler {
+
+    public static final DownloadHandler INSTANCE = new DownloadHandler();
+
+    public ISchematic schematic = null;
+
+    public final Map<EntityPlayerMP, SchematicTransfer> transferMap = new LinkedHashMap<>();
+
+    private DownloadHandler() {}
+
+    @SubscribeEvent
+    public void onServerTick(TickEvent.ServerTickEvent event) {
+        if (event.phase == TickEvent.Phase.START) {
+            return;
+        }
+
+        processQueue();
+    }
+
+    private void processQueue() {
+        if (this.transferMap.isEmpty()) {
+            return;
+        }
+
+        final EntityPlayerMP player = this.transferMap.keySet()
+            .iterator()
+            .next();
+        final SchematicTransfer transfer = this.transferMap.remove(player);
+
+        if (transfer == null) {
+            return;
+        }
+
+        if (!transfer.state.isWaiting()) {
+            if (++transfer.timeout >= Constants.Network.TIMEOUT) {
+                if (++transfer.retries >= Constants.Network.RETRIES) {
+                    Reference.logger.warn("{}'s download was dropped!", player.getDisplayName());
+                    return;
+                }
+
+                Reference.logger
+                    .warn("{}'s download timed out, retrying (#{})", player.getDisplayName(), transfer.retries);
+
+                sendChunk(player, transfer);
+                transfer.timeout = 0;
+            }
+        } else if (transfer.state == SchematicTransfer.State.BEGIN_WAIT) {
+            sendBegin(player, transfer);
+        } else if (transfer.state == SchematicTransfer.State.CHUNK_WAIT) {
+            sendChunk(player, transfer);
+        } else if (transfer.state == SchematicTransfer.State.END_WAIT) {
+            sendEnd(player, transfer);
+            return;
+        }
+
+        this.transferMap.put(player, transfer);
+    }
+
+    private void sendBegin(EntityPlayerMP player, SchematicTransfer transfer) {
+        transfer.setState(SchematicTransfer.State.BEGIN);
+
+        MessageDownloadBegin message = new MessageDownloadBegin(transfer.schematic);
+        PacketHandler.INSTANCE.sendTo(message, player);
+    }
+
+    private void sendChunk(EntityPlayerMP player, SchematicTransfer transfer) {
+        transfer.setState(SchematicTransfer.State.CHUNK);
+
+        Reference.logger.trace("Sending chunk {},{},{}", transfer.baseX, transfer.baseY, transfer.baseZ);
+        MessageDownloadChunk message = new MessageDownloadChunk(
+            transfer.schematic,
+            transfer.baseX,
+            transfer.baseY,
+            transfer.baseZ);
+        PacketHandler.INSTANCE.sendTo(message, player);
+    }
+
+    private void sendEnd(EntityPlayerMP player, SchematicTransfer transfer) {
+        MessageDownloadEnd message = new MessageDownloadEnd(transfer.name);
+        PacketHandler.INSTANCE.sendTo(message, player);
+    }
+}

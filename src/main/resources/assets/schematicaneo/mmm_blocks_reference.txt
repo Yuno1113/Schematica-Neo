@@ -1,0 +1,1209 @@
+========================================================================================================================
+  魔法金属方块清单 - 用于手动校对匹配
+  格式: 序号 | MMM注册名 | 元数据 | 中文名
+========================================================================================================================
+
+  ===== 第一部分: 已自动匹配的方块 =====
+
+      1  |  minecraft:wool                     |      0  |  羊毛方块
+      2  |  minecraft:wool                     |      1  |  橙色羊毛方块
+      3  |  minecraft:wool                     |      2  |  品红羊毛方块
+      4  |  minecraft:wool                     |      3  |  淡蓝羊毛方块
+      5  |  minecraft:wool                     |      4  |  黄色羊毛方块
+      6  |  minecraft:wool                     |      5  |  黄绿羊毛方块
+      7  |  minecraft:wool                     |      6  |  粉红羊毛方块
+      8  |  minecraft:wool                     |      7  |  灰色羊毛方块
+      9  |  minecraft:wool                     |      8  |  淡灰色羊毛方块
+     10  |  minecraft:wool                     |      9  |  青色羊毛方块
+     11  |  minecraft:wool                     |     10  |  紫色羊毛方块
+     12  |  minecraft:wool                     |     11  |  蓝色羊毛方块
+     13  |  minecraft:wool                     |     12  |  棕色羊毛方块
+     14  |  minecraft:wool                     |     13  |  绿色羊毛方块
+     15  |  minecraft:wool                     |     14  |  红色羊毛方块
+     16  |  minecraft:wool                     |     15  |  黑色羊毛方块
+     17  |  minecraft:stained_glass            |      0  |  白色染色玻璃
+     18  |  minecraft:stained_glass            |      1  |  橙色染色玻璃
+     19  |  minecraft:stained_glass            |      2  |  品红色染色玻璃
+     20  |  minecraft:stained_glass            |      3  |  淡蓝色染色玻璃
+     21  |  minecraft:stained_glass            |      4  |  黄色染色玻璃
+     22  |  minecraft:stained_glass            |      5  |  黄绿色染色玻璃
+     23  |  minecraft:stained_glass            |      6  |  粉红色染色玻璃
+     24  |  minecraft:stained_glass            |      7  |  灰色染色玻璃
+     25  |  minecraft:stained_glass            |      8  |  淡灰色染色玻璃
+     26  |  minecraft:stained_glass            |      9  |  青色染色玻璃
+     27  |  minecraft:stained_glass            |     10  |  紫色染色玻璃
+     28  |  minecraft:stained_glass            |     11  |  蓝色染色玻璃
+     29  |  minecraft:stained_glass            |     12  |  棕色染色玻璃
+     30  |  minecraft:stained_glass            |     13  |  绿色染色玻璃
+     31  |  minecraft:stained_glass            |     14  |  红色染色玻璃
+     32  |  minecraft:stained_glass            |     15  |  黑色染色玻璃
+     33  |  minecraft:stained_glass_pane       |      0  |  白色染色玻璃板
+     34  |  minecraft:stained_glass_pane       |      1  |  橙色染色玻璃板
+     35  |  minecraft:stained_glass_pane       |      2  |  品红色染色玻璃板
+     36  |  minecraft:stained_glass_pane       |      3  |  淡蓝色染色玻璃板
+     37  |  minecraft:stained_glass_pane       |      4  |  黄色染色玻璃板
+     38  |  minecraft:stained_glass_pane       |      5  |  黄绿色染色玻璃板
+     39  |  minecraft:stained_glass_pane       |      6  |  粉红色染色玻璃板
+     40  |  minecraft:stained_glass_pane       |      7  |  灰色染色玻璃板
+     41  |  minecraft:stained_glass_pane       |      8  |  淡灰色染色玻璃板
+     42  |  minecraft:stained_glass_pane       |      9  |  青色染色玻璃板
+     43  |  minecraft:stained_glass_pane       |     10  |  紫色染色玻璃板
+     44  |  minecraft:stained_glass_pane       |     11  |  蓝色染色玻璃板
+     45  |  minecraft:stained_glass_pane       |     12  |  棕色染色玻璃板
+     46  |  minecraft:stained_glass_pane       |     13  |  绿色染色玻璃板
+     47  |  minecraft:stained_glass_pane       |     14  |  红色染色玻璃板
+     48  |  minecraft:stained_glass_pane       |     15  |  黑色染色玻璃板
+     49  |  minecraft:stained_hardened_clay    |      0  |  白色染色粘土
+     50  |  minecraft:stained_hardened_clay    |      1  |  橙色染色粘土
+     51  |  minecraft:stained_hardened_clay    |      2  |  品红色染色粘土
+     52  |  minecraft:stained_hardened_clay    |      3  |  淡蓝色染色粘土
+     53  |  minecraft:stained_hardened_clay    |      4  |  黃色染色粘土
+     54  |  minecraft:stained_hardened_clay    |      5  |  黄绿色染色粘土
+     55  |  minecraft:stained_hardened_clay    |      6  |  粉色染色粘土
+     56  |  minecraft:stained_hardened_clay    |      7  |  灰色染色粘土
+     57  |  minecraft:stained_hardened_clay    |      8  |  淡灰色染色粘土
+     58  |  minecraft:stained_hardened_clay    |      9  |  青色染色粘土
+     59  |  minecraft:stained_hardened_clay    |     10  |  紫色染色粘土
+     60  |  minecraft:stained_hardened_clay    |     11  |  蓝色染色粘土
+     61  |  minecraft:stained_hardened_clay    |     12  |  棕色染色粘土
+     62  |  minecraft:stained_hardened_clay    |     13  |  绿色染色粘土
+     63  |  minecraft:stained_hardened_clay    |     14  |  红色染色粘土
+     64  |  minecraft:stained_hardened_clay    |     15  |  黑色染色粘土
+     65  |  manametalmod:glazed_terracotta     |      0  |  白色带釉陶瓦
+     66  |  manametalmod:glazed_terracotta_1   |      0  |  橙色带釉陶瓦
+     67  |  manametalmod:glazed_terracotta_2   |      0  |  品红带釉陶瓦
+     68  |  manametalmod:glazed_terracotta_3   |      0  |  淡蓝带釉陶瓦
+     69  |  manametalmod:glazed_terracotta_4   |      0  |  黄色带釉陶瓦
+     70  |  manametalmod:glazed_terracotta_5   |      0  |  黄绿带釉陶瓦
+     71  |  manametalmod:glazed_terracotta_6   |      0  |  粉红带釉陶瓦
+     72  |  manametalmod:glazed_terracotta_7   |      0  |  灰色带釉陶瓦
+     73  |  manametalmod:glazed_terracotta_8   |      0  |  淡灰带釉陶瓦
+     74  |  manametalmod:glazed_terracotta_9   |      0  |  青色带釉陶瓦
+     75  |  manametalmod:glazed_terracotta_10  |      0  |  紫色带釉陶瓦
+     76  |  manametalmod:glazed_terracotta_11  |      0  |  蓝色带釉陶瓦
+     77  |  manametalmod:glazed_terracotta_12  |      0  |  棕色带釉陶瓦
+     78  |  manametalmod:glazed_terracotta_13  |      0  |  绿色带釉陶瓦
+     79  |  manametalmod:glazed_terracotta_14  |      0  |  红色带釉陶瓦
+     80  |  manametalmod:glazed_terracotta_15  |      0  |  黑色带釉陶瓦
+     81  |  manametalmod:concrete_powder       |      0  |  白色混凝土粉末
+     82  |  manametalmod:concrete_powder       |      1  |  橙色混凝土粉末
+     83  |  manametalmod:concrete_powder       |      2  |  品红混凝土粉末
+     84  |  manametalmod:concrete_powder       |      3  |  淡蓝混凝土粉末
+     85  |  manametalmod:concrete_powder       |      4  |  黄色混凝土粉末
+     86  |  manametalmod:concrete_powder       |      5  |  黄绿混凝土粉末
+     87  |  manametalmod:concrete_powder       |      6  |  粉红混凝土粉末
+     88  |  manametalmod:concrete_powder       |      7  |  灰色混凝土粉末
+     89  |  manametalmod:concrete_powder       |      8  |  淡灰混凝土粉末
+     90  |  manametalmod:concrete_powder       |      9  |  青色混凝土粉末
+     91  |  manametalmod:concrete_powder       |     10  |  紫色混凝土粉末
+     92  |  manametalmod:concrete_powder       |     11  |  蓝色混凝土粉末
+     93  |  manametalmod:concrete_powder       |     12  |  棕色混凝土粉末
+     94  |  manametalmod:concrete_powder       |     13  |  绿色混凝土粉末
+     95  |  manametalmod:concrete_powder       |     14  |  红色混凝土粉末
+     96  |  manametalmod:concrete_powder       |     15  |  黑色混凝土粉末
+     97  |  minecraft:carpet                   |      0  |  地毯
+     98  |  minecraft:carpet                   |      1  |  橙色地毯
+     99  |  minecraft:carpet                   |      2  |  品红色地毯
+    100  |  minecraft:carpet                   |      3  |  淡蓝色地毯
+    101  |  minecraft:carpet                   |      4  |  黄色地毯
+    102  |  minecraft:carpet                   |      5  |  黄绿色地毯
+    103  |  minecraft:carpet                   |      6  |  粉红色地毯
+    104  |  minecraft:carpet                   |      7  |  灰色地毯
+    105  |  minecraft:carpet                   |      8  |  淡灰色地毯
+    106  |  minecraft:carpet                   |      9  |  青色地毯
+    107  |  minecraft:carpet                   |     10  |  紫色地毯
+    108  |  minecraft:carpet                   |     11  |  蓝色地毯
+    109  |  minecraft:carpet                   |     12  |  棕色地毯
+    110  |  minecraft:carpet                   |     13  |  绿色地毯
+    111  |  minecraft:carpet                   |     14  |  红色地毯
+    112  |  minecraft:carpet                   |     15  |  黑色地毯
+    113  |  minecraft:hardened_clay            |      0  |  硬化黏土
+
+  ===== 第二部分: 未匹配的原版方块 (MMM对应留空) =====
+
+
+  --- 混凝土 ---
+
+    114  |  manametalmod:concrete  |     15  |  黑色混凝土
+    115  |  manametalmod:concrete  |     11  |  蓝色混凝土
+    116  |  manametalmod:concrete  |     12  |  棕色混凝土
+    117  |  manametalmod:concrete  |      9  |  青色混凝土
+    118  |  manametalmod:concrete  |      7  |  灰色混凝土
+    119  |  manametalmod:concrete  |     13  |  绿色混凝土
+    120  |  manametalmod:concrete  |      3  |  淡蓝混凝土
+    121  |  manametalmod:concrete  |      8  |  淡灰混凝土
+    122  |  manametalmod:concrete  |      5  |  黄绿混凝土
+    123  |  manametalmod:concrete  |      2  |  品红混凝土
+    124  |  manametalmod:concrete  |      1  |  橙色混凝土
+    125  |  manametalmod:concrete  |      6  |  粉红混凝土
+    126  |  manametalmod:concrete  |     10  |  紫色混凝土
+    127  |  manametalmod:concrete  |     14  |  红色混凝土
+    128  |  manametalmod:concrete  |      0  |  白色混凝土
+    129  |  manametalmod:concrete  |      4  |  黄色混凝土
+
+  --- 地毯 ---
+
+    130  |  manametalmod:BlockMossplant  |      0  |  苔藓
+    131  |                               |         |  
+
+  --- 木板 ---
+
+    132  |  minecraft:planks                       |      4  |  金合欢木板
+    133  |                                         |         |  
+    134  |  minecraft:planks                       |      2  |  白桦木板
+    135  |  manametalmod:wood_plank_vanillasakura  |      0  |  大山樱木板
+    136  |  manametalmod:wood_plank_NetherRed      |      0  |  绯红木板
+    137  |  minecraft:planks                       |      5  |  深色橡木木板
+    138  |  minecraft:planks                       |      3  |  丛林木板
+    139  |  manametalmod:wood_plank_redtree        |      0  |  红树木板
+    140  |  minecraft:planks                       |      0  |  橡木木板
+    141  |                                         |         |  
+    142  |  minecraft:planks                       |      1  |  云杉木板
+    143  |  manametalmod:wood_plank_NetherBlue     |      0  |  诡异木板
+
+  --- 原木/木头 ---
+  
+    144  |  minecraft:log2                             |      0  |  金合欢木
+    145  |  minecraft:log2                             |      0  |  金合欢木
+    146  |  minecraft:log                              |      2  |  白桦木
+    147  |  minecraft:log                              |      2  |  白桦木
+    148  |  manametalmod:wood_log_vanillasakur         |      0  |  大山樱原木
+    149  |  manametalmod:wood_log_vanillasakur         |      0  |  大山樱原木
+    150  |  minecraft:log2                             |      1  |  深色橡木
+    151  |  minecraft:log2                             |      1  |  深色橡木
+    152  |  minecraft:log                              |      3  |  丛林木
+    153  |  minecraft:log                              |      3  |  丛林木
+    154  |  manametalmod:wood_log_redtree              |      0  |  红树原木
+    155  |  manametalmod:wood_log_redtree              |      0  |  红树原木
+    156  |  minecraft:log                              |      0  |  橡木
+    157  |  minecraft:log                              |      0  |  橡木
+    158  |                                             |         |  
+    159  |                                             |         |  
+    160  |  minecraft:log                              |      1  |  云杉木
+    161  |  minecraft:log                              |      1  |  云杉木
+    162  |  manametalmod:BlockLogMC2break              |      0  |  剥皮相思原木
+    163  |  manametalmod:BlockLogMC1break              |      2  |  剥皮桦木原木
+    164  |  manametalmod:wood_log_break_vanillasakura  |      0  |  剥皮大山樱原木
+    165  |  manametalmod:BlockLogMC2break              |      1  |  剥皮黑橡原木
+    166  |  manametalmod:BlockLogMC1break              |      3  |  剥皮丛林原木
+    167  |  manametalmod:wood_log_break_redtree        |      0  |  剥皮红树原木
+    168  |  manametalmod:BlockLogMC1break              |      0  |  剥皮橡木原木
+    169  |                                             |         |  
+    170  |  manametalmod:BlockLogMC1break              |      1  |  剥皮杉木原木
+
+  --- 去皮木头 ---
+  
+    171  |  manametalmod:BlockLogMC2break              |      0  |  剥皮相思原木
+    172  |  manametalmod:BlockLogMC1break              |      2  |  剥皮桦木原木
+    173  |  manametalmod:wood_log_break_vanillasakura  |      0  |  剥皮大山樱原木
+    174  |  manametalmod:BlockLogMC2break              |      1  |  剥皮黑橡原木
+    175  |  manametalmod:BlockLogMC1break              |      3  |  剥皮丛林原木
+    176  |  manametalmod:wood_log_break_redtree        |      0  |  剥皮红树原木
+    177  |  manametalmod:BlockLogMC1break              |      0  |  剥皮橡木原木
+    178  |                                             |         |  
+    179  |  manametalmod:BlockLogMC1break              |      1  |  剥皮杉木原木
+
+  --- 树叶 ---
+  
+    180  |  minecraft:leaves2                      |      0  |  金合欢树叶
+    181  |                                         |         |  
+    182  |  minecraft:leaves                       |      2  |  白桦树叶
+    183  |  manametalmod:wood_leave_vanillasakura  |      0  |  大山樱树叶
+    184  |  minecraft:leaves2                      |      1  |  深色橡树树叶
+    185  |                                         |         |  
+    186  |  minecraft:leaves                       |      3  |  丛林树叶
+    187  |  manametalmod:wood_leave_redtree        |      0  |  红树树叶
+    188  |  minecraft:leaves                       |      0  |  橡树树叶
+    189  |                                         |         |  
+    190  |  minecraft:leaves                       |      1  |  云杉树叶
+
+  --- 树苗 ---
+  
+    191  |  minecraft:sapling                        |      4  |  金合欢树苗
+    192  |                                           |         |  
+    193  |  minecraft:sapling                        |      2  |  白桦树苗
+    194  |  manametalmod:wood_sapling_vanillasakura  |      0  |  大山樱树苗
+    195  |  minecraft:sapling                        |      5  |  深色橡树树苗
+    196  |  minecraft:sapling                        |      3  |  丛林树苗
+    197  |  minecraft:sapling                        |      0  |  橡树树苗
+    198  |                                           |         |  
+    199  |  minecraft:flower_pot                     |      0  |  花盆
+    200  |  minecraft:flower_pot                     |      0  |  花盆
+    201  |  minecraft:flower_pot                     |      0  |  花盆
+    202  |  minecraft:flower_pot                     |      0  |  花盆
+    203  |  minecraft:flower_pot                     |      0  |  花盆
+    204  |  minecraft:flower_pot                     |      0  |  花盆
+    205  |  minecraft:flower_pot                     |      0  |  花盆
+    206  |  minecraft:flower_pot                     |      0  |  花盆
+    207  |  minecraft:sapling                        |      0  |  云杉树苗
+
+  --- 栅栏 ---
+
+    208  |  manametalmod:fence_acacia     |      0  |  金合欢木栅栏
+    209  |  manametalmod:BlockRenderCores7|      0  |  伪装栅栏
+    210  |  manametalmod:fence_birch      |      0  |  白桦木栅栏
+    211  |  manametalmod:BlockRenderCores7|      0  |  伪装栅栏
+    212  |  manametalmod:BlockRenderCores7|      0  |  伪装栅栏
+    213  |  manametalmod:fence_big_oak    |      0  |  深色橡木栅栏
+    214  |  manametalmod:fence_jungle     |      0  |  丛林木栅栏
+    215  |  manametalmod:BlockRenderCores7|      0  |  伪装栅栏
+    216  |  minecraft:nether_brick_fence  |      0  |  地狱砖栅栏
+    217  |  minecraft:fence               |      0  |  栅栏
+    218  |  manametalmod:BlockRenderCores7|      0  |  伪装栅栏
+    219  |  manametalmod:fence_spruce     |      0  |  云杉木栅栏
+    220  |  manametalmod:BlockRenderCores7|      0  |  伪装栅栏
+
+  --- 栅栏门 ---
+
+    221  |  manametalmod:wood_gate_base4  |      0  |  金合欢木栅栏门
+    222  |  minecraft:fence_gate          |      0  |  栅栏门
+    223  |  manametalmod:wood_gate_base2  |      0  |  桦木栅栏门
+    224  |  minecraft:fence_gate          |      0  |  栅栏门
+    225  |  minecraft:fence_gate          |      0  |  栅栏门
+    226  |  manametalmod:wood_gate_base5  |      0  |  黑橡木栅栏门
+    227  |  manametalmod:wood_gate_base3  |      0  |  丛林木栅栏门
+    228  |  minecraft:fence_gate          |      0  |  栅栏门
+    229  |  minecraft:fence_gate          |      0  |  栅栏门
+    230  |  minecraft:fence_gate          |      0  |  栅栏门
+    231  |  manametalmod:wood_gate_base1  |      0  |  杉木栅栏门
+    232  |  minecraft:fence_gate          |      0  |  栅栏门
+
+  --- 门 ---
+
+    233  |  manametalmod:acaciadoor    |      0  |  金合欢木门
+    234  |                             |         |  
+    235  |  manametalmod:birchdoor     |      0  |  白桦木门
+    236  |                             |         |  
+    237  |                             |         |  
+    238  |                             |         |  
+    239  |  manametalmod:dark_oakdoor  |      0  |  深色橡木门
+    240  |                             |         |  
+    241  |  minecraft:iron_door        |      0  |  铁门
+    242  |  manametalmod:jungledoor    |      0  |  丛林木门
+    243  |                             |         |  
+    244  |  manametalmod:orkdoordoor   |      0  |  橡木门
+    245  |                             |         |  
+    246  |                             |         |  
+    247  |  manametalmod:sprucedoor    |      0  |  云杉木门
+    248  |                             |         |  
+    249  |                             |         |  
+    250  |                             |         |  
+    251  |                             |         |  
+    252  |                             |         |  
+    253  |                             |         |  
+
+  --- 活板门 ---
+
+    254  |  manametalmod:wood_trapdoor_base4  |      0  |  金合欢木活板门
+    255  |                                    |         |  
+    256  |  manametalmod:wood_trapdoor_base2  |      0  |  桦木活板门
+    257  |                                    |         |  
+    258  |                                    |         |  
+    259  |                                    |         |  
+    260  |  manametalmod:wood_trapdoor_base5  |      0  |  黑橡木活板门
+    261  |                                    |         |  
+    262  |  manametalmod:BlockTrapDoorIron    |      0  |  铁活板门
+    263  |  manametalmod:wood_trapdoor_base3  |      0  |  丛林木活板门
+    264  |                                    |         |  
+    265  |  manametalmod:trapdoorOak          |      0  |  橡木活板门
+    266  |                                    |         |  
+    267  |                                    |         |  
+    268  |  manametalmod:wood_trapdoor_base1  |      0  |  云杉木活板门
+    269  |                                    |         |  
+    270  |                                    |         |  
+    271  |                                    |         |  
+    272  |                                    |         |  
+    273  |                                    |         |  
+    274  |                                    |         |  
+
+  --- 楼梯 ---
+  
+    275  |  minecraft:acacia_stairs                 |      0  |  金合欢木楼梯
+    276  |  manametalmod:RockBlockNewMinecraft_stairs_5  | 0  |  安山岩阶梯
+    277  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    278  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    279  |  minecraft:birch_stairs                  |      0  |  桦木楼梯
+    280  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    281  |  minecraft:brick_stairs                  |      0  |  砖楼梯
+    282  |  manametalmod:wood_stairs_vanillasakura  |      0  |  大山樱楼梯
+    283  |  manametalmod:deepslateblock_stairs_0    |      0  |  深板岩碎石阶梯
+    284  |  minecraft:stone_stairs                  |      0  |  石楼梯
+    285  |  manametalmod:wood_stairs_NetherRed      |      0  |  绯红木楼梯
+    286  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    287  |  minecraft:dark_oak_stairs               |      0  |  深色橡木楼梯
+    288  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    289  |  manametalmod:deepslatebrick_stairs_1    |      0  |  深板岩砖阶梯
+    290  |  manametalmod:deepslatebrick_stairs_2    |      0  |  深板岩砖瓦阶梯
+    291  |  manametalmod:RockBlockNewMinecraft_stairs_3  | 0  |  闪长岩阶梯
+    292  |  manametalmod:RockBlockNewMinecraft_stairs_13 | 0  |  终界砖阶梯
+    293  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    294  |  manametalmod:RockBlockNewMinecraft_stairs_1  | 0  |  花岗岩阶梯
+    295  |  minecraft:jungle_stairs                 |      0  |  丛林木楼梯
+    296  |  manametalmod:wood_stairs_redtree        |      0  |  红树阶梯
+    297  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    298  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    299  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    300  |  minecraft:nether_brick_stairs           |      0  |  地狱砖楼梯
+    301  |  minecraft:oak_stairs                    |      0  |  橡木楼梯
+    302  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    303  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    304  |  manametalmod:RockBlockNewMinecraft_stairs_6  | 0  |  平滑安山岩阶梯
+    305  |  manametalmod:RockBlockNewMinecraft2__stairs_2| 0  |  黑石砖阶梯
+    306  |  manametalmod:RockBlockNewMinecraft2__stairs_1| 0  |  抛光黑石阶梯
+    307  |  manametalmod:deepslateblock_stairs_1    |      0  |  抛光深板岩阶梯
+    308  |  manametalmod:RockBlockNewMinecraft_stairs_4  | 0  |  平滑闪长岩阶梯
+    309  |  manametalmod:RockBlockNewMinecraft_stairs_2  | 0  |  平滑花岗岩阶梯
+    310  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    311  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    312  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    313  |  manametalmod:RockBlockNewMinecraft_stairs_7 |  0  |  紫珀砖阶梯
+    314  |  minecraft:quartz_stairs                 |      0  |  石英楼梯
+    315  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    316  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    317  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    318  |  minecraft:sandstone_stairs              |      0  |  沙石楼梯
+    319  |  manametalmod:RockBlockNewMinecraft3__stairs_12|0  |  六面平滑石英阶梯
+    320  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    321  |  manametalmod:RockBlockNewMinecraft3_    |      0  |  六面平滑砂岩阶梯
+    322  |  minecraft:spruce_stairs                 |      0  |  云杉木楼梯
+    323  |  minecraft:stone_brick_stairs            |      0  |  石砖楼梯
+    324  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    325  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    326  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    327  |  manametalmod:wood_stairs_NetherBlue     |      0  |  诡异木楼梯
+    328  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    329  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    330  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    331  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+    332  |  manametalmod:BlockRenderCoreStairss     |      0  |  伪装楼梯
+
+  --- 台阶 ---
+  
+    333  |  minecraft:wooden_slab                 |      4  |  金合欢木台阶
+    334  |  manametalmod:RockBlockNewMinecraft_slab_5  | 0  |  安山岩半砖
+    335  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    336  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    337  |  minecraft:wooden_slab                 |      2  |  桦木台阶
+    338  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    339  |  minecraft:stone_slab                  |      4  |  砖台阶
+    340  |  manametalmod:wood_salb_vanillasakura  |      0  |  大山樱半砖
+    341  |  manametalmod:deepslateblock_slab_0    |      0  |  深板岩碎石半砖
+    342  |  minecraft:stone_slab                  |      3  |  圆石台阶
+    343  |  manametalmod:wood_salb_NetherRed      |      0  |  绯红木台阶
+    344  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    345  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    346  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    347  |  minecraft:wooden_slab                 |      5  |  深色橡木台阶
+    348  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    349  |  manametalmod:deepslatebrick_slab_1    |      0  |  深板岩砖半砖
+    350  |  manametalmod:deepslatebrick_slab_2    |      0  |  深板岩砖瓦半砖
+    351  |  manametalmod:RockBlockNewMinecraft_slab_3  | 0  |  闪长岩半砖
+    352  |  manametalmod:RockBlockNewMinecraft_slab_13 | 0  |  终界砖半砖
+    353  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    354  |  manametalmod:RockBlockNewMinecraft_slab_1  | 0  |  花岗岩半砖
+    355  |  minecraft:wooden_slab                 |      3  |  丛林台阶
+    356  |  manametalmod:wood_salb_redtree        |      0  |  红树台阶
+    357  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    358  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    359  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    360  |  minecraft:stone_slab                  |      6  |  地狱砖台阶
+    361  |  minecraft:wooden_slab                 |      0  |  橡木台阶
+    362  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    363  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    364  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    365  |  manametalmod:RockBlockNewMinecraft_slab_6  | 0  |  平滑安山岩半砖
+    366  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    367  |  manametalmod:RockBlockNewMinecraft2__slab_1| 0  |  抛光黑石半砖
+    368  |  manametalmod:deepslateblock_slab_1    |      0  |  抛光深板岩半砖
+    369  |  manametalmod:RockBlockNewMinecraft_slab_4  | 0  |  平滑闪长岩半砖
+    370  |  manametalmod:RockBlockNewMinecraft_slab_2  | 0  |  平滑花岗岩半砖
+    371  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    372  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    373  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    374  |  manametalmod:BlueStoneSlabEnder       |      0  |  紫珀台阶
+    375  |  minecraft:stone_slab                  |      7  |  石英台阶
+    376  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    377  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    378  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    379  |  minecraft:stone_slab                  |      1  |  沙石台阶
+    380  |  manametalmod:RockBlockNewMinecraft3__slab_12|0  |  六面平滑石英半砖
+    381  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    382  |  manametalmod:RockBlockNewMinecraft3__slab_8| 0  |  六面平滑砂岩半砖
+    383  |  minecraft:stone_slab                  |      0  |  石台阶
+    384  |  minecraft:wooden_slab                 |      1  |  云杉台阶
+    385  |  minecraft:stone_slab                  |      5  |  石砖台阶
+    386  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    387  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    388  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    389  |  manametalmod:wood_salb_NetherBlue     |      0  |  诡异木台阶
+    390  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    391  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    392  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    393  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+    394  |  manametalmod:BlockRenderCores3        |      0  |  伪装下半砖
+
+  --- 墙 ---
+  
+    395  |  manametalmod:BlockWallSub1                |   5 |  安山岩墙
+    396  |  manametalmod:BlockWallSub2                |   0 |  黑石墙
+    397  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    398  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    399  |  minecraft:cobblestone_wall                |   0 |  圆石墙
+    400  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    401  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    402  |  manametalmod:BlockWallSub1                |   3 |  闪长岩墙
+    403  |  manametalmod:BlockWallSub1                |  13 |  末地石砖墙
+    404  |  manametalmod:BlockWallSub1                |   1 |  花岗岩墙
+    405  |  minecraft:cobblestone_wall                |   1 |  苔石墙
+    406  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    407  |  manametalmod:BlockWallSubMud              |   1 |  泥砖墙
+    408  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    409  |  manametalmod:BlockWallSub2                |   2 |  黑石砖墙
+    410  |  manametalmod:BlockWallSub2                |   1 |  磨制黑石墙
+    411  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    412  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    413  |  manametalmod:BlockWallSub1                |   8 |  海晶石墙
+    414  |  manametalmod:BlockWallSub1                |  11 |  红地狱砖墙
+    415  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    416  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    417  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    418  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    419  |  manametalmod:BlockRenderCores6            |   0 |  伪装石墙
+    420  |  manametalmod:BlockWallSub1                |  15 |  凝灰岩墙
+
+  --- 石质建筑方块 ---
+
+    421  |  manametalmod:RockBlockNewMinecraft    |      5  |  安山岩
+    422  |  minecraft:bedrock                     |      0  |  基岩
+    423  |  minecraft:brick_block                 |      0  |  砖块
+    424  |                                        |         |  
+    425  |                                        |         |  
+    426  |  manametalmod:deepslatebrick           |      0  |  浮雕深板岩
+    427  |  manametalmod:RockBlockNewMinecraft2_  |      8  |  錾制地狱砖块
+    428  |  manametalmod:RockBlockNewMinecraft2_  |      3  |  錾制黑石
+    429  |  minecraft:quartz_block                |      1  |  錾制石英块
+    430  |                                        |         |  
+    431  |                                        |         |  
+    432  |  minecraft:sandstone                   |      1  |  錾制沙石
+    433  |  minecraft:stonebrick                  |      3  |  錾制石砖
+    434  |                                        |         |  
+    435  |                                        |         |  
+    436  |  manametalmod:deepslateblock           |      0  |  深板岩碎石
+    437  |  minecraft:cobblestone                 |      0  |  圆石
+    438  |  manametalmod:deepslatebrick           |      3  |  裂纹深板岩砖
+    439  |                                        |         |  
+    440  |                                        |         |  
+    441  |  minecraft:stonebrick                  |      2  |  裂石砖
+    442  |                                        |         |  
+    443  |  minecraft:sandstone                   |      2  |  平滑沙石
+    444  |  manametalmod:RockBlockNewMinecraft    |     10  |  暗海晶石
+    445  |  manametalmod:deepslatebrick           |      1  |  深板岩砖
+    446  |  manametalmod:RockBlockNewMinecraft    |      3  |  闪长岩
+    447  |  minecraft:end_stone                   |      0  |  末地石
+    448  |  manametalmod:RockBlockNewMinecraft    |     13  |  末地石砖
+    449  |  manametalmod:RockBlockNewMinecraft    |      1  |  花岗岩
+    450  |                                        |         |  
+    451  |  minecraft:monster_egg                 |      4  |  裂石砖怪物蛋
+    452  |  minecraft:monster_egg                 |      3  |  苔石砖怪物蛋
+    453  |  minecraft:monster_egg                 |      2  |  石砖怪物蛋
+    454  |  minecraft:stonebrick                  |      1  |  苔石砖
+    455  |  manametalmod:mud                      |      1  |  泥砖
+    456  |  minecraft:nether_brick                |      0  |  地狱砖块
+    457  |  manametalmod:RockBlockNewMinecraft    |      6  |  平滑安山岩
+    458  |                                        |         |  
+    459  |  manametalmod:RockBlockNewMinecraft2_  |      1  |  磨制黑石
+    460  |  manametalmod:RockBlockNewMinecraft2_  |      2  |  磨制黑石砖
+    461  |  manametalmod:deepslateblock           |      1  |  抛光深板岩
+    462  |  manametalmod:RockBlockNewMinecraft    |      4  |  平滑闪长岩
+    463  |  manametalmod:RockBlockNewMinecraft    |      2  |  平滑花岗岩
+    464  |                                        |         |  
+    465  |  manametalmod:RockBlockNewMinecraft    |      8  |  海晶石
+    466  |  manametalmod:RockBlockNewMinecraft    |      9  |  海晶石砖
+    467  |  manametalmod:RockBlockNewMinecraft    |      7  |  紫珀砖
+    468  |  manametalmod:purpur_pillar            |      0  |  紫珀柱
+    469  |  minecraft:quartz_block                |      0  |  石英块
+    470  |                                        |         |  
+    471  |                                        |         |  
+    472  |  manametalmod:RockBlockNewMinecraft    |     11  |  红地狱砖
+    473  |                                        |         |  
+    474  |                                        |         |  
+    475  |  minecraft:sandStone                   |      0  |  沙石
+    476  |  manametalmod:RockBlockNewMinecraft3_  |     12  |  六面平滑石英
+    477  |  manametalmod:RockBlockNewMinecraft3_  |      9  |  六面平滑红砂岩
+    478  |  manametalmod:RockBlockNewMinecraft3_  |      8  |  六面平滑砂岩
+    479  |  manametalmod:RockBlockNewMinecraft    |      0  |  平滑石头
+    480  |  minecraft:stone                       |      0  |  石头
+    481  |  minecraft:stonebrick                  |      0  |  石砖
+    482  |                                        |         |  
+
+  --- 自然地表 ---
+
+    483  |  minecraft:clay             |      0  |  粘土块
+    484  |                             |         |  
+    485  |  minecraft:dirt             |      0  |  泥土
+    486  |  minecraft:farmland         |      0  |  耕地
+    487  |  minecraft:grass            |      0  |  草方块
+    488  |  minecraft:gravel           |      0  |  沙砾
+    489  |  minecraft:mycelium         |      0  |  菌丝
+    490  |  minecraft:dirt             |      2  |  灰化土
+    491  |  minecraft:sand             |      1  |  红沙
+    492  |  minecraft:sand             |      0  |  沙子
+    493  |  minecraft:soul_sand        |      0  |  灵魂沙
+    494  |  manametalmod:soul_soil     |      0  |  灵魂土
+
+  --- 自然其他 ---
+  
+    495  |                                        |         |  
+    496  |  manametalmod:RockBlockNewMinecraft2_  |      4  |  哭泣的黑曜石
+    497  |  minecraft:glowstone                   |      0  |  萤石
+    498  |  manametalmod:ice                      |      0  |  冰
+    499  |  minecraft:flowing_lava                |      0  |  岩浆
+    500  |                                        |         |  
+    501  |  minecraft:obsidian                    |      0  |  黑曜石
+    502  |  minecraft:packed_ice                  |      0  |  浮冰
+    503  |  manametalmod:sea_lantern              |      0  |  海晶灯
+    504  |  minecraft:snow_layer                  |      0  |  雪
+    505  |  minecraft:snow                        |      0  |  雪块
+    506  |  minecraft:sponge                      |      0  |  海绵
+    507  |  minecraft:flowing_water               |      0  |  水
+    508  |                                        |         |  
+
+  --- 矿石 ---
+  
+    509  |  minecraft:coal_ore          |      0  |  煤矿石
+    510  |  manametalmod:oreCopper      |      0  |  铜矿石
+    511  |                              |         |  
+    512  |                              |         |  
+    513  |                              |         |  
+    514  |                              |         |  
+    515  |                              |         |  
+    516  |                              |         |  
+    517  |                              |         |  
+    518  |                              |         |  
+    519  |  minecraft:diamond_ore       |      0  |  钻石矿石
+    520  |  minecraft:emerald_ore       |      0  |  绿宝石矿石
+    521  |  minecraft:gold_ore          |      0  |  金矿石
+    522  |  minecraft:iron_ore          |      0  |  铁矿石
+    523  |  minecraft:lapis_ore         |      0  |  青金石矿石
+    524  |  manametalmod:blockHellGold  |      0  |  下界金矿石
+    525  |  minecraft:quartz_ore        |      0  |  下界石英矿石
+    526  |  minecraft:redstone_ore      |      0  |  红石矿石
+
+  --- 按钮 ---
+  
+    527  |  minecraft:wooden_button                   |  0  |  按钮
+    528  |  minecraft:wooden_button                   |  0  |  按钮
+    529  |  minecraft:wooden_button                   |  0  |  按钮
+    530  |  minecraft:wooden_button                   |  0  |  按钮
+    531  |  minecraft:wooden_button                   |  0  |  按钮
+    532  |  minecraft:wooden_button                   |  0  |  按钮
+    533  |  minecraft:wooden_button                   |  0  |  按钮
+    534  |  minecraft:wooden_button                   |  0  |  按钮
+    535  |  minecraft:wooden_button                   |  0  |  按钮
+    536  |  minecraft:wooden_button                   |  0  |  按钮
+    537  |  minecraft:stone_button                    |  0  |  按钮
+    538  |  minecraft:wooden_button                   |  0  |  按钮
+    539  |  minecraft:stone_button                    |  0  |  按钮
+    540  |  minecraft:wooden_button                   |  0  |  按钮
+
+  --- 压力板 ---
+  
+    541  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    542  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    543  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    544  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    545  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    546  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    547  |  minecraft:heavy_weighted_pressure_plate   |  0  |  测重压力板（重质）
+    548  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    549  |  minecraft:light_weighted_pressure_plate   |  0  |  测重压力板（轻质）
+    550  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    551  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    552  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    553  |  minecraft:stone_pressure_plate            |  0  |  压力板
+    554  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+    555  |  minecraft:stone_pressure_plate            |  0  |  压力板
+    556  |  minecraft:wooden_pressure_plate           |  0  |  压力板
+
+  --- 功能方块 ---
+  
+    557  |  minecraft:anvil                       |      0  |  铁砧
+    558  |                                        |         |  
+    559  |  minecraft:beacon                      |      0  |  信标
+    560  |  manametalmod:BlockFurnitureBases      |     72  |  钟
+    561  |                                        |         |  
+    562  |  minecraft:brewing_stand               |      0  |  酿造台
+    563  |  manametalmod:campfire                 |      0  |  营火
+    564  |                                        |         |  
+    565  |  minecraft:cauldron                    |      0  |  炼药锅
+    566  |  minecraft:chest                       |      0  |  箱子
+    567  |  minecraft:comparator                  |      0  |  红石比较器
+    568  |  manametalmod:BlockComposters          |      0  |  堆肥桶
+    569  |  minecraft:crafting_table              |      0  |  工作台
+    570  |  minecraft:daylight_detector           |      0  |  阳光传感器
+    571  |  minecraft:dispenser                   |      0  |  发射器
+    572  |  minecraft:dropper                     |      0  |  投掷器
+    573  |  minecraft:enchanting_table            |      0  |  附魔台
+    574  |  minecraft:ender_chest                 |      0  |  末影箱
+    575  |                                        |         |  
+    576  |  minecraft:furnace                     |      0  |  熔炉
+    577  |                                        |         |  
+    578  |  minecraft:hopper                      |      0  |  漏斗
+    579  |  minecraft:jukebox                     |      0  |  唱片机
+    580  |  manametalmod:BlockLanterns            |      2  |  铁灯笼
+    581  |  manametalmod:BlockLecternM3           |      0  |  讲台
+    582  |  minecraft:lever                       |      0  |  拉杆
+    583  |                                        |         |  
+    584  |  minecraft:noteblock                   |      0  |  音符盒
+    585  |                                        |         |  
+    586  |  minecraft:piston                      |      0  |  活塞
+    587  |  minecraft:redstone_lamp               |      0  |  红石灯
+    588  |  minecraft:redstone_torch              |      0  |  红石火把
+    589  |  minecraft:powered_repeater            |      0  |  红石中继器
+    590  |                                        |         |  
+    591  |                                        |         |  
+    592  |  manametalmod:campfire_soul            |      0  |  灵魂营火
+    593  |                                        |         |  
+    594  |                                        |         |  
+    595  |  minecraft:sticky_piston               |      0  |  粘性活塞
+    596  |  minecraft:Stonecutter                 |      3  |  石材切割机
+    597  |                                        |         |  
+    598  |  manametalmod:torch                    |      0  |  火把
+    599  |  minecraft:trapped_chest               |      0  |  陷阱箱
+
+  --- 交通/红石 ---
+  
+    600  |  minecraft:activator_rail                  |  0  |  激活铁轨
+    601  |  minecraft:detector_rail                   |  0  |  探测铁轨
+    602  |  minecraft:golden_rail                     |  0  |  动力铁轨
+    603  |  minecraft:rail                            |  0  |  铁轨
+    604  |  minecraft:redstone_wire                   |  0  |  红石
+    605  |  minecraft:tripwire                        |  0  |  线
+    606  |  minecraft:tripwire_hook                   |  0  |  绊线钩
+
+  --- 植物 ---
+
+    607  |  minecraft:red_flower                |      2  |  绒球葱
+    608  |  minecraft:red_flower                |      3  |  茜草花
+    609  |                                      |         |  
+    610  |                                      |         |  
+    611  |  minecraft:red_flower                |      1  |  兰花
+    612  |  minecraft:brown_mushroom            |      0  |  蘑菇
+    613  |  minecraft:cactus                    |      0  |  仙人掌
+    614  |  minecraft:carrots                   |      0  |  胡萝卜
+    615  |  manametalmod:BlockChorusFlower      |      0  |  紫颂花
+    616  |                                      |         |  
+    617  |  minecraft:cocoa                     |      0  |  可可果
+    618  |  minecraft:yellow_flower             |      0  |  蒲公英
+    619  |  minecraft:dead_bush                 |      0  |  枯死的灌木
+    620  |  manametalmod:kelpblock              |      0  |  海带块
+    621  |  minecraft:tallgrass                 |      2  |  蕨
+    622  |  minecraft:tallgrass                 |      1  |  草
+    623  |  manametalmod:BlockSeaGrass1         |      0  |  海带
+    624  |  minecraft:double_plant              |      3  |  大型蕨
+    625  |  minecraft:double_plant              |      1  |  丁香
+    626  |  minecraft:waterlily                 |      0  |  睡莲
+    627  |  minecraft:melon_block               |      0  |  西瓜
+    628  |  minecraft:melon_stem                |      0  |  Melon stem
+    629  |  minecraft:nether_wart               |      0  |  地狱疣
+    630  |  minecraft:red_flower                |      5  |  橙色郁金香
+    631  |  minecraft:red_flower                |      8  |  滨菊
+    632  |  minecraft:double_plant              |      5  |  牡丹
+    633  |  minecraft:red_flower                |      7  |  粉红色郁金香
+    634  |  minecraft:red_flower                |      0  |  罂粟
+    635  |  minecraft:potatoes                  |      0  |  马铃薯
+    636  |  minecraft:pumpkin                   |      0  |  南瓜
+    637  |  minecraft:pumpkin_stem              |      0  |  Pumpkin stem
+    638  |  minecraft:red_mushroom              |      0  |  蘑菇
+    639  |  minecraft:red_flower                |      4  |  红色郁金香
+    640  |  minecraft:double_plant              |      4  |  玫瑰丛
+    641  |                                      |         |  
+    642  |  minecraft:reeds                     |      0  |  甘蔗
+    643  |  minecraft:double_plant              |      0  |  向日葵
+    644  |  manametalmod:SweetBerrie_cropBlock  |     10  |  甜浆果丛
+    645  |  minecraft:double_plant              |      2  |  高草丛
+    646  |  minecraft:vine                      |      0  |  藤蔓
+    647  |  minecraft:wheat                     |      0  |  小麦
+    648  |  minecraft:red_flower                |      6  |  白色郁金香
+
+  --- 潜影盒 ---
+  
+    649  |                                            |     |  
+    650  |                                            |     |  
+    651  |                                            |     |  
+    652  |                                            |     |  
+    653  |                                            |     |  
+    654  |                                            |     |  
+    655  |                                            |     |  
+    656  |                                            |     |  
+    657  |                                            |     |  
+    658  |                                            |     |  
+    659  |                                            |     |  
+    660  |                                            |     |  
+    661  |                                            |     |  
+    662  |                                            |     |  
+    663  |                                            |     |  
+    664  |                                            |     |  
+    665  |                                            |     |  
+
+  --- 杂项建筑 ---
+
+    666  |  minecraft:bookshelf                        |      0  |  书架
+    667  |  minecraft:glass                            |      0  |  玻璃
+    668  |  minecraft:glass_pane                       |      0  |  玻璃板
+    669  |  minecraft:iron_bars                        |      0  |  铁栏杆
+    670  |  minecraft:ladder                           |      0  |  梯子
+    671  |                                             |         |  
+    672  |  manametalmod:BlockFlagStanding             |      0  |  旗帜
+
+  --- 其他 ---
+  
+    673  |                                          |         |  
+    674  |  manametalmod:blocksign_acacia           |      0  |  金合欢木告示牌
+    675  |                                          |      0  |  
+    676  |  manametalmod:blocksignwall_acacia       |      5  |  金合欢木告示牌
+    677  |  manametalmod:BlockAirLight              |      0  |  空气
+    678  |  manametalmod:Blockamethyst              |      0  |  紫水晶块
+    679  |  manametalmod:BlockAmethystClusters      |      0  |  紫水晶簇
+    680  |  manametalmod:oreNetherite               |      0  |  远古残骸
+    681  |                                          |         |  
+    682  |                                          |         |  
+    683  |  manametalmod:BlockAzaleas               |      0  |  杜鹃
+    684  |                                          |         |  
+    685  |                                          |         |  
+    686  |                                          |         |  
+    687  |                                          |         |  
+    688  |                                          |         |  
+    689  |                                          |         |  
+    690  |                                          |         |  
+    691  |                                          |         |  
+    692  |                                          |         |  
+    693  |                                          |         |  
+    694  |                                          |         |  
+    695  |                                          |         |  
+    696  |                                          |         |  
+    697  |                                          |         |  
+    698  |                                          |         |  
+    699  |  manametalmod:blocksBigHoneys            |      0  |  普通蜂巢
+    700  |                                          |         |  
+    701  |                                          |         |  
+    702  |                                          |         |  
+    703  |                                          |         |  
+    704  |  manametalmod:blocksign_birch            |      0  |  桦木告示牌
+    705  |                                          |         |  
+    706  |  manametalmod:blocksignwall_birch        |      5  |  桦木告示牌
+    707  |  manametalmod:Bed_Black                  |      0  |  黑色床
+    708  |  manametalmod:BlockCandles               |     15  |  黑色蜡烛
+    709  |                                          |         |  
+    710  |  manametalmod:RockBlockNewMinecraft2_    |      0  |  黑石
+    711  |  manametalmod:Bed_Blue                   |      0  |  蓝色床
+    712  |  manametalmod:BlockCandles               |     11  |  蓝色蜡烛
+    713  |                                          |         |  
+    714  |  manametalmod:bone_block                 |      0  |  骨块
+    715  |                                          |         |  
+    716  |  manametalmod:RockBlockNewMinecraft2_    |     11  |  脑珊瑚方块
+    717  |                                          |         |  
+    718  |                                          |         |  
+    719  |  manametalmod:Bed_Brown                  |      0  |  棕色床
+    720  |  manametalmod:BlockCandles               |     12  |  棕色蜡烛
+    721  |                                          |         |  
+    722  |  minecraft:brown_mushroom_block          |      0  |  蘑菇
+    723  |                                          |         |  
+    724  |                                          |         |  
+    725  |  manametalmod:RockBlockNewMinecraft2_    |     12  |  气泡珊瑚方块
+    726  |                                          |         |  
+    727  |                                          |         |  
+    728  |  manametalmod:Blockamethyst              |      1  |  紫水晶母岩
+    729  |                                          |         |  
+    730  |                                          |         |  
+    731  |  minecraft:cake                          |      0  |  蛋糕
+    732  |  manametalmod:RockBlockNewMinecraft      |     14  |  方解石
+    733  |                                          |         |  
+    734  |  manametalmod:BlockCandles               |      0  |  蜡烛
+    735  |                                          |         |  
+    736  |                                          |         |  
+    737  |                                          |         |  
+    738  |  manametalmod:BlockCaveLeaves            |      0  |  藤蔓
+    739  |                                          |         |  
+    740  |  manametalmod:BlockChain1                |      2  |  铁锁链
+    741  |                                          |         |  
+    742  |                                          |         |  
+    743  |                                          |         |  
+    744  |                                          |         |  
+    745  |                                          |         |  
+    746  |  minecraft:anvil                         |      1  |  轻微损坏的铁砧
+    747  |                                          |         |  
+    748  |  minecraft:coal_block                    |      0  |  煤炭块
+    749  |  minecraft:web                           |      0  |  蜘蛛网
+    750  |                                          |         |  
+    751  |                                          |         |  
+    752  |  manametalmod:copperblock                |      0  |  铜块
+    753  |                                          |         |  
+    754  |                                          |         |  
+    755  |                                          |         |  
+    756  |  manametalmod:deepslatebrick             |      4  |  裂纹深板岩砖瓦
+    757  |                                          |         |  
+    758  |                                          |         |  
+    759  |                                          |         |  
+    760  |                                          |         |  
+    761  |  manametalmod:wood_sapling_NetherRed     |      0  |  绯红菌
+    762  |                                          |         |  
+    763  |                                          |         |  
+    764  |  manametalmod:DritNylium1                |      0  |  绯红菌丝石
+    765  |  manametalmod:FlowersMC                  |      5  |  绯红菌
+    766  |                                          |         |  
+    767  |  manametalmod:wood_log_NetherRed         |      0  |  绯红菌柄
+    768  |                                          |         |  
+    769  |                                          |         |  
+    770  |  manametalmod:copperblock                |      4  |  切制铜块
+    771  |  manametalmod:Bed_Cyan                   |      0  |  青色床
+    772  |  manametalmod:BlockCandles               |      9  |  青色蜡烛
+    773  |                                          |         |  
+    774  |  minecraft:anvil                         |      2  |  严重损坏的铁砧
+    775  |                                          |         |  
+    776  |  manametalmod:blocksign_dark_oak         |      0  |  黑橡木告示牌
+    777  |                                          |         |  
+    778  |  manametalmod:blocksignwall_dark_oak     |      5  |  黑橡木告示牌
+    779  |                                          |         |  
+    780  |                                          |         |  
+    781  |                                          |         |  
+    782  |                                          |         |  
+    783  |                                          |         |  
+    784  |                                          |         |  
+    785  |                                          |         |  
+    786  |                                          |         |  
+    787  |                                          |         |  
+    788  |                                          |         |  
+    789  |                                          |         |  
+    790  |                                          |         |  
+    791  |                                          |         |  
+    792  |                                          |         |  
+    793  |                                          |         |  
+    794  |                                          |         |  
+    795  |                                          |         |  
+    796  |                                          |         |  
+    797  |                                          |         |  
+    798  |                                          |         |  
+    799  |                                          |         |  
+    800  |  manametalmod:deepslate                  |      0  |  深板岩
+    801  |  manametalmod:deepslatebrick             |      2  |  深板岩砖瓦
+    802  |  minecraft:diamond_block                 |      0  |  钻石块
+    803  |  manametalmod:BlockGrassPaths            |      0  |  草径
+    804  |  minecraft:dragon_egg                    |      0  |  龙蛋
+    805  |                                          |         |  
+    806  |                                          |         |  
+    807  |  manametalmod:RockBlockNewMinecraft2_    |      7  |  滴水石块
+    808  |  minecraft:emerald_block                 |      0  |  绿宝石块
+    809  |                                          |         |  
+    810  |                                          |         |  
+    811  |  minecraft:end_portal_frame              |      0  |  末地传送门
+    812  |  manametalmod:endrod                     |      1  |  终界烛
+    813  |                                          |         |  
+    814  |  manametalmod:copperblock                |      1  |  斑驳铜块
+    815  |                                          |         |  
+    816  |                                          |         |  
+    817  |  manametalmod:copperblock                |      5  |  斑驳切制铜块
+    818  |                                          |         |  
+    819  |                                          |         |  
+    820  |  manametalmod:RockBlockNewMinecraft2_    |     13  |  火珊瑚方块
+    821  |                                          |         |  
+    822  |                                          |         |  
+    823  |                                          |         |  
+    824  |  manametalmod:BlockFlowerPotM3           |      0  |  花盆
+    825  |  manametalmod:BlockAzaleas               |      1  |  杜鹃
+    826  |                                          |         |  
+    827  |                                          |         |  
+    828  |                                          |         |  
+    829  |  manametalmod:BlockGlowLichens           |      0  |  发光地衣
+    830  |  minecraft:gold_block                    |      0  |  金块
+    831  |  manametalmod:Bed_Gray                   |      0  |  灰色床
+    832  |  manametalmod:BlockCandles               |      7  |  灰色蜡烛
+    833  |                                          |         |  
+    834  |  manametalmod:Bed_Green                  |      0  |  绿色床
+    835  |  manametalmod:BlockCandles               |     13  |  绿色蜡烛
+    836  |                                          |         |  
+    837  |                                          |         |  
+    838  |  minecraft:hay_block                     |      0  |  干草块
+    839  |                                          |         |  
+    840  |                                          |         |  
+    841  |                                          |         |  
+    842  |                                          |         |  
+    843  |  manametalmod:RockBlockNewMinecraft2_    |     14  |  角珊瑚方块
+    844  |                                          |         |  
+    845  |                                          |         |  
+    846  |  minecraft:monster_egg                   |      1  |  圆石怪物蛋
+    847  |                                          |         |  
+    848  |  minecraft:monster_egg                   |      0  |  石头怪物蛋
+    849  |  minecraft:iron_block                    |      0  |  铁块
+    850  |  minecraft:lit_pumpkin                   |      0  |  南瓜灯
+    851  |                                          |         |  
+    852  |                                          |         |  
+    853  |  manametalmod:blocksign_jungle           |      0  |  丛林木告示牌
+    854  |                                          |         |  
+    855  |  manametalmod:blocksignwall_jungle       |      5  |  丛林木告示牌
+    856  |                                          |         |  
+    857  |  minecraft:lapis_block                   |      0  |  青金石块
+    858  |  manametalmod:BlockAmethystClusters      |      0  |  紫水晶簇
+    859  |  minecraft:cauldron                      |      0  |  炼药锅
+    860  |                                          |         |  
+    861  |  manametalmod:BlockAirLight              |      0  |  空气
+    862  |  manametalmod:Bed_LightBlue              |      0  |  淡蓝色床
+    863  |  manametalmod:BlockCandles               |      3  |  浅蓝色蜡烛
+    864  |                                          |         |  
+    865  |  manametalmod:Bed_LightGray              |      0  |  淡灰色床
+    866  |  manametalmod:BlockCandles               |      8  |  浅灰色蜡烛
+    867  |                                          |         |  
+    868  |                                          |         |  
+    869  |                                          |         |  
+    870  |  manametalmod:Bed_Lime                   |      0  |  浅绿色床
+    871  |  manametalmod:BlockCandles               |      5  |  浅绿色蜡烛
+    872  |                                          |         |  
+    873  |  manametalmod:BlockLodestone             |      0  |  磁石
+    874  |  manametalmod:Bed_Magenta                |      0  |  品红色床
+    875  |  manametalmod:BlockCandles               |      2  |  桃红色蜡烛
+    876  |                                          |         |  
+    877  |                                          |         |  
+    878  |  manametalmod:wood_sapling_redtree       |      0  |  红树树苗
+    879  |                                          |         |  
+    880  |                                          |         |  
+    881  |                                          |         |  
+    882  |                                          |         |  
+    883  |  manametalmod:BlockAmethystClusters      |      0  |  紫水晶簇
+    884  |  manametalmod:BlockMossgrass             |      0  |  苔藓块
+    885  |  minecraft:mossy_cobblestone             |      0  |  苔石
+    886  |                                          |         |  
+    887  |  manametalmod:mud                        |      0  |  泥巴
+    888  |                                          |         |  
+    889  |  manametalmod:mushroomHandle             |      0  |  蘑菇柄
+    890  |  minecraft:portal                        |      0  |  传送门
+    891  |  manametalmod:FlowersMC                  |      2  |  下界苗
+    892  |  manametalmod:RockBlockNewMinecraft      |     12  |  地狱疣块
+    893  |  manametalmod:blockNetherite             |      0  |  下界合金块
+    894  |  minecraft:netherrack                    |      0  |  地狱岩
+    895  |                                          |         |  
+    896  |  minecraft:standing_sign                 |      0  |  告示牌
+    897  |                                          |         |  
+    898  |  minecraft:wall_sign                     |      5  |  告示牌
+    899  |  manametalmod:froglight_0                |      0  |  赭黄蛙光体
+    900  |                                          |         |  
+    901  |  manametalmod:Bed_Orange                 |      0  |  橙色床
+    902  |  manametalmod:BlockCandles               |      1  |  橘色蜡烛
+    903  |                                          |         |  
+    904  |                                          |         |  
+    905  |  manametalmod:copperblock                |      3  |  氧化铜块
+    906  |                                          |         |  
+    907  |                                          |         |  
+    908  |  manametalmod:copperblock                |      7  |  氧化切制铜块
+    909  |  manametalmod:mud                        |      2  |  泥坯
+    910  |                                          |         |  
+    911  |                                          |         |  
+    912  |                                          |         |  
+    913  |                                          |         |  
+    914  |                                          |         |  
+    915  |                                          |         |  
+    916  |  manametalmod:froglight_1                |      0  |  朱紫蛙光体
+    917  |                                          |         |  
+    918  |                                          |         |  
+    919  |  manametalmod:Bed_Pink                   |      0  |  粉色床
+    920  |  manametalmod:BlockCandles               |      6  |  粉红蜡烛
+    921  |                                          |         |  
+    922  |                                          |         |  
+    923  |                                          |         |  
+    924  |                                          |         |  
+    925  |                                          |         |  
+    926  |                                          |         |  
+    927  |                                          |         |  
+    928  |                                          |         |  
+    929  |                                          |         |  
+    930  |                                          |         |  
+    931  |  minecraft:flower_pot                    |      0  |  花盆
+    932  |  minecraft:flower_pot                    |      0  |  花盆
+    933  |  minecraft:flower_pot                    |      0  |  花盆
+    934  |  minecraft:flower_pot                    |      0  |  花盆
+    935  |  minecraft:flower_pot                    |      0  |  花盆
+    936  |  minecraft:flower_pot                    |      0  |  花盆
+    937  |  minecraft:flower_pot                    |      0  |  花盆
+    938  |  minecraft:flower_pot                    |      0  |  花盆
+    939  |  minecraft:flower_pot                    |      0  |  花盆
+    940  |  minecraft:flower_pot                    |      0  |  花盆
+    941  |  minecraft:flower_pot                    |      0  |  花盆
+    942  |  minecraft:flower_pot                    |      0  |  花盆
+    943  |  minecraft:flower_pot                    |      0  |  花盆
+    944  |  minecraft:flower_pot                    |      0  |  花盆
+    945  |  minecraft:flower_pot                    |      0  |  花盆
+    946  |  minecraft:flower_pot                    |      0  |  花盆
+    947  |  minecraft:flower_pot                    |      0  |  花盆
+    948  |  minecraft:flower_pot                    |      0  |  花盆
+    949  |  minecraft:flower_pot                    |      0  |  花盆
+    950  |  minecraft:flower_pot                    |      0  |  花盆
+    951  |  minecraft:flower_pot                    |      0  |  花盆
+    952  |  minecraft:flower_pot                    |      0  |  花盆
+    953  |  minecraft:flower_pot                    |      0  |  花盆
+    954  |  minecraft:flower_pot                    |      0  |  花盆
+    955  |  minecraft:flower_pot                    |      0  |  花盆
+    956  |  minecraft:flower_pot                    |      0  |  花盆
+    957  |  minecraft:flower_pot                    |      0  |  花盆
+    958  |  minecraft:flower_pot                    |      0  |  花盆
+    959  |                                          |         |  
+    960  |  minecraft:cauldron                      |      0  |  炼药锅
+    961  |  manametalmod:Bed_Purple                 |      0  |  紫色床
+    962  |  manametalmod:BlockCandles               |     10  |  紫色蜡烛
+    963  |                                          |         |  
+    964  |                                          |         |  
+    965  |                                          |         |  
+    966  |                                          |         |  
+    967  |  manametalmod:Bed_Red                    |      0  |  红色床
+    968  |  manametalmod:BlockCandles               |     14  |  红色蜡烛
+    969  |                                          |         |  
+    970  |  minecraft:red_mushroom_block            |      0  |  蘑菇
+    971  |  minecraft:redstone_block                |      0  |  红石块
+    972  |  minecraft:redstone_torch                |      1  |  红石火把
+    973  |  manametalmod:reinforced_deepslate       |      0  |  强化深板岩
+    974  |                                          |         |  
+    975  |                                          |         |  
+    976  |                                          |         |  
+    977  |                                          |         |  
+    978  |                                          |         |  
+    979  |                                          |         |  
+    980  |                                          |         |  
+    981  |                                          |         |  
+    982  |                                          |         |  
+    983  |                                          |         |  
+    984  |  manametalmod:BlockSeaGrass2             |      0  |  海草
+    985  |                                          |         |  
+    986  |                                          |         |  
+    987  |  minecraft:tallgrass                     |      1  |  草
+    988  |                                          |         |  
+    989  |  minecraft:skull                         |      0  |  骷髅头颅
+    990  |  minecraft:skull                         |      0  |  骷髅头颅
+    991  |  manametalmod:BlockSlimes                |      0  |  史莱姆块
+    992  |  manametalmod:BlockAmethystClusters      |      0  |  紫水晶簇
+    993  |                                          |         |  
+    994  |                                          |         |  
+    995  |                                          |         |  
+    996  |  manametalmod:soul_fire_1                |      0  |  灵魂火
+    997  |                                          |         |  
+    998  |                                          |         |  
+    999  |  minecraft:mob_spawner                   |      0  |  刷怪箱
+   1000  |                                          |         |  
+   1001  |                                          |         |  
+   1002  |                                          |         |  
+   1003  |                                          |         |  
+   1004  |  manametalmod:blocksign_spruce           |      0  |  杉木告示牌
+   1005  |                                          |         |  
+   1006  |  manametalmod:blocksignwall_spruce       |      5  |  杉木告示牌
+   1007  |                                          |         |  
+   1008  |  manametalmod:wood_log_break_NetherRed   |      0  |  去皮绯红菌柄
+   1009  |  manametalmod:wood_log_break_NetherRed   |      0  |  去皮绯红菌柄
+   1010  |  manametalmod:wood_log_break_NetherBlue  |      0  |  去皮诡异菌柄
+   1011  |  manametalmod:wood_log_break_NetherBlue  |      0  |  去皮诡异菌柄
+   1012  |                                          |         |  
+   1013  |                                          |         |  
+   1014  |                                          |         |  
+   1015  |                                          |         |  
+   1016  |                                          |         |  
+   1017  |  manametalmod:BlockSeaGrass3             |      0  |  海草
+   1018  |                                          |         |  
+   1019  |                                          |         |  
+   1020  |  manametalmod:BlockGlassTinteds          |      0  |  遮光玻璃
+   1021  |  minecraft:tnt                           |      0  |  TNT
+   1022  |                                          |         |  
+   1023  |                                          |         |  
+   1024  |                                          |         |  
+   1025  |                                          |         |  
+   1026  |                                          |         |  
+   1027  |  manametalmod:RockBlockNewMinecraft2_    |     15  |  管珊瑚方块
+   1028  |                                          |         |  
+   1029  |                                          |         |  
+   1030  |  manametalmod:RockBlockNewMinecraft      |     15  |  凝灰岩
+   1031  |                                          |         |  
+   1032  |  manametalmod:BlockVineBlue              |      0  |  缠冤藤
+   1033  |  manametalmod:BlockVineBlue              |      1  |  缠冤藤
+   1034  |                                          |         |  
+   1035  |  manametalmod:froglight_2                |      0  |  苍翠蛙光体
+   1036  |                                          |         |  
+   1037  |  minecraft:torch                         |      1  |  火把
+   1038  |  manametalmod:wood_sapling_NetherBlue    |      0  |  诡异菌
+   1039  |                                          |         |  
+   1040  |                                          |         |  
+   1041  |  manametalmod:DritNylium2                |      0  |  诡异菌岩
+   1042  |  manametalmod:FlowersMC                  |      0  |  诡异菌索
+   1043  |                                          |         |  
+   1044  |  manametalmod:wood_log_NetherBlue        |      0  |  诡异菌柄
+   1045  |                                          |         |  
+   1046  |                                          |         |  
+   1047  |  manametalmod:wood_leave_NetherBlue      |      0  |  诡异疣块
+   1048  |  minecraft:cauldron                      |      3  |  炼药锅
+   1049  |                                          |         |  
+   1050  |  manametalmod:copperblock_wax            |      0  |  上蜡铜块
+   1051  |                                          |         |  
+   1052  |                                          |         |  
+   1053  |  manametalmod:copperblock_wax            |      4  |  上蜡切制铜块
+   1054  |                                          |         |  
+   1055  |  manametalmod:copperblock_wax            |      1  |  上蜡斑驳铜块
+   1056  |                                          |         |  
+   1057  |                                          |         |  
+   1058  |  manametalmod:copperblock_wax            |      5  |  上蜡斑驳切制铜块
+   1059  |                                          |         |  
+   1060  |  manametalmod:copperblock_wax            |      3  |  上蜡氧化铜块
+   1061  |                                          |         |  
+   1062  |                                          |         |  
+   1063  |  manametalmod:copperblock_wax            |      7  |  上蜡氧化切制铜块
+   1064  |                                          |         |  
+   1065  |  manametalmod:copperblock_wax            |      2  |  上蜡风化铜块
+   1066  |                                          |         |  
+   1067  |                                          |         |  
+   1068  |  manametalmod:copperblock_wax            |      6  |  上蜡风化切制铜块
+   1069  |                                          |         |  
+   1070  |  manametalmod:copperblock                |      2  |  风化铜块
+   1071  |                                          |         |  
+   1072  |                                          |         |  
+   1073  |  manametalmod:copperblock                |      6  |  风化切制铜块
+   1074  |  manametalmod:BlockVineRed               |      0  |  垂泪藤
+   1075  |  manametalmod:BlockVineRed               |      1  |  垂泪藤
+   1076  |  minecraft:bed                           |      0  |  床
+   1077  |  manametalmod:BlockCandles               |      0  |  白色蜡烛
+   1078  |                                          |         |  
+   1079  |                                          |         |  
+   1080  |                                          |         |  
+   1081  |  minecraft:skull                         |      1  |  凋灵骷髅头颅
+   1082  |  minecraft:skull                         |      1  |  凋灵骷髅头颅
+   1083  |  manametalmod:Bed_Yellow                 |      0  |  黄色床
+   1084  |  manametalmod:BlockCandles               |      4  |  黄色蜡烛
+   1085  |                                          |         |  
+   1086  |                                          |         |  
+   1087  |                                          |         |  
+
+   ===== 第二部分: 额外 =====
+   1088  |  manametalmod:BlockChain1                |      2  |  铁锁链
+   1089  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1090  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1091  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1092  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1093  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1094  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1095  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1096  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1097  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1098  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1099  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1100  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1101  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1102  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1103  |  manametalmod:BlockFlagStanding          |      0  |  旗帜
+   1104  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1105  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1106  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1107  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1108  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1109  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1110  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1111  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1112  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1113  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1114  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1115  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1116  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1117  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1118  |  manametalmod:BlockFlagWall              |      3  |  旗帜
+   1119  |  manametalmod:BlockFlagWall              |      3  |  旗帜

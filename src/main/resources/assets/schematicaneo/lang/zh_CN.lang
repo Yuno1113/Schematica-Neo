@@ -1,0 +1,246 @@
+# gui - general
+schematica.gui.openFolder=打开Schematic文件夹
+schematica.gui.done=完成
+schematica.gui.title=选择Schematic文件
+schematica.gui.folderInfo=(将Schematic文件夹放在此处)
+schematica.gui.noschematic=-- 没有Schematic文件 --
+schematica.gui.increase=+
+schematica.gui.decrease=-
+schematica.gui.hide=隐藏
+schematica.gui.all=全部
+schematica.gui.show=显示
+schematica.gui.movehere=移动到此处
+schematica.gui.flip=对称
+schematica.gui.rotate=旋转
+schematica.gui.name=名称
+schematica.gui.savecoordinates=保存坐标
+schematica.gui.moveschematic=移动Schematic文件
+schematica.gui.layers=层
+schematica.gui.operations=操作
+schematica.gui.unload=卸载
+schematica.gui.on=开
+schematica.gui.off=关
+schematica.gui.x=X:
+schematica.gui.y=Y:
+schematica.gui.z=Z:
+schematica.gui.materials=材料
+schematica.gui.materialname=材料
+schematica.gui.materialamount=数量
+schematica.gui.materialrequired=要求
+schematica.gui.materialavailable=可用
+schematica.gui.materialdump=保存到文件
+schematica.gui.printer=打印
+
+# schematic editor
+schematica.editor.title=投影编辑
+schematica.editor.enable=编辑: %s
+schematica.editor.enable.tooltip=开启时启用所有功能，可能会屏蔽正常操作。
+schematica.editor.mode=模式: %s
+schematica.editor.selectionSource=选区: %s
+schematica.editor.source.schematic=投影
+schematica.editor.source.world=方块
+schematica.editor.import=导入结构文件
+schematica.editor.save.selection=保存选区
+schematica.editor.save.edited=保存投影
+schematica.editor.save.selection.tooltip=将当前选区中的方块保存为新的投影文件；来源由“方块/投影”按钮决定。
+schematica.editor.save.edited.tooltip=直接保存当前已加载并经过剪切、粘贴、替换或元数据修改的完整投影。
+schematica.editor.replace.config=替换方块设置
+schematica.editor.replace.title=替换方块设置
+schematica.editor.replace.help=单击背包中的方块物品设置替换目标
+schematica.editor.replace.metadata=元数据:
+schematica.editor.replace.target=当前目标:
+schematica.editor.replace.none=未选择
+schematica.editor.import.title=导入结构文件
+schematica.editor.import.description=该功能用于导入结构文件，且仅适配“魔法金属”（ManaMetalMod）模组。选择文件导入后，会根据魔金模组对原版 1.13+ 版本的方块对照表进行自动转换；若某些方块无对应项，则会使用标记方块替代，并生成相应的替换列表。需要注意的是，若服务器未安装该模组，标记方块将无法正常显示，因此建议仅在单人游戏中使用此功能。
+schematica.editor.import.tooltip=导入高版本结构文件
+schematica.editor.import.empty=没有找到可导入的 .nbt 或 .litematic 文件。
+schematica.editor.import.select=单击文件开始转换
+schematica.editor.import.localFile=保存本地对照文件
+schematica.editor.import.book=生成对照书
+schematica.editor.import.book.singleplayer=仅单人存档可生成对照书
+schematica.editor.import.fileSaved=对照文件已保存到本地
+schematica.editor.import.fileSavedPath=对照文件已保存: %s
+schematica.editor.import.reference.tooltip=点击生成部分缺失方块的替换对照列表
+schematica.editor.import.formats=支持格式: .nbt / .litematic
+schematica.editor.import.complete=结构转换完成
+schematica.editor.import.failed=结构转换失败
+schematica.editor.import.unknownCount=未识别方块: %d
+schematica.editor.import.bookTitle=未知方块对照
+schematica.editor.import.bookCreated=对照书已放入背包
+schematica.editor.import.completePath=结构转换完成: %s
+schematica.editor.cornerSelection=双键选点: %s
+schematica.editor.cornerSelection.tooltip=开启后可用鼠标左右键更改选区
+schematica.editor.selectionSource.tooltip=选区范围：\n方块：世界中存在的方块\n投影：载入的投影
+schematicaneo.gui.visibility.selection=选区可见
+schematicaneo.gui.visibility.block=单方块可见
+schematicaneo.gui.visibility.block.config=配置方块
+schematicaneo.gui.visibility.block.title=选择可见方块
+schematicaneo.gui.visibility.block.help=单击背包中的方块，投影将只显示相同方块和元数据
+schematicaneo.gui.printSpeed.minimum=最低速
+schematicaneo.gui.printSpeed.slow=慢
+schematicaneo.gui.printSpeed.medium=中
+schematicaneo.gui.printSpeed.fast=快
+schematicaneo.gui.printSpeed.faster=更快
+schematicaneo.gui.printSpeed.high=高速
+schematicaneo.gui.printSpeed.veryHigh=极速
+schematicaneo.gui.printSpeed.maximum=超速
+schematicaneo.gui.printSpeed.tooltip=打印速度档位（“快”为默认，多人服务器最高3.00x）：\n最低速：0.27x　慢：0.43x　中：0.60x\n快：1.00x（默认）　更快：1.50x\n高速：3.00x　极速：6.00x　超速：12.00x（仅单人）
+schematica.editor.help.controls=Shift+滚轮: 模式  Ctrl+滚轮: 大小  Alt+滚轮: 位置
+schematica.editor.help.action=复制/剪切/粘贴: 回车
+schematica.editor.currentRange=当前范围: %s
+schematica.editor.range.single=单个
+schematica.editor.range.selection=选区
+schematica.editor.range.all=全部
+schematica.editor.mode.select=选区
+schematica.editor.mode.select.tooltip=选择投影或实际世界中的区域。Ctrl+滚轮调整准星对应面的大小，Alt+滚轮整体移动选区，Alt+中键将中心重置到玩家位置。
+schematica.editor.mode.copy=复制
+schematica.editor.mode.copy.tooltip=按回车将当前选区中的方块复制到编辑缓存。
+schematica.editor.mode.paste=粘贴
+schematica.editor.mode.paste.tooltip=按回车进入粘贴预览，Alt+滚轮沿视线移动，空手右键确认，空手左键取消。
+schematica.editor.mode.cut=剪切
+schematica.editor.mode.cut.tooltip=按回车复制当前选区；选区来源为投影时，同时删除投影中的对应方块。
+schematica.editor.mode.replace=替换方块
+schematica.editor.mode.replace.tooltip=Alt+滚轮切换单个、选区或全部范围，空手右键将准星所指同类方块替换为替换工具设置的目标方块。
+schematica.editor.mode.rotateMeta=轮换方块元数据
+schematica.editor.mode.rotateMeta.tooltip=Alt+滚轮切换单个、选区或全部范围，空手右键元数据+1，空手左键元数据-1。
+schematica.editor.mode.moveSchematic=移动投影
+schematica.editor.mode.moveSchematic.tooltip=使用Alt+滚轮沿玩家当前主要视线方向移动已加载的完整投影。
+schematica.editor.chat.prefix=§6[投影编辑] §7
+schematica.editor.chat.mode=模式: %s
+schematica.editor.chat.source=选区来源: %s
+schematica.editor.chat.empty=剪贴板为空
+schematica.editor.chat.preview=已进入粘贴预览，空手右键确认，空手左键取消
+schematica.editor.chat.cancel=已取消粘贴预览
+schematica.editor.chat.copy=已复制 %dx%dx%d 选区
+schematica.editor.chat.cut=已剪切 %dx%dx%d 选区
+schematica.editor.chat.noSchematic=未加载投影
+schematica.editor.chat.paste=已合并粘贴剪贴板内容
+schematica.editor.chat.replaceTarget=请先在替换工具界面设置替换方块
+schematica.editor.chat.replaced=已替换 %d 个方块
+schematica.editor.chat.rotated=已轮换 %d 个方块的元数据
+schematica.editor.chat.range=当前操作范围: %s
+
+# gui - config - categories
+schematicaneo.config.category.debug=Debug
+schematicaneo.config.category.debug.tooltip=Debug/开发者设置.\n如果你不清楚自己在做什么,请勿点击.
+schematicaneo.config.category.render=渲染
+schematicaneo.config.category.render.tooltip=渲染相关设置.
+schematicaneo.config.category.printer=打印
+schematicaneo.config.category.printer.tooltip=打印相关设置.
+schematicaneo.config.category.printer.swapslots=快捷栏
+schematicaneo.config.category.printer.swapslots.tooltip=允许打印使用非空快捷栏.
+schematicaneo.config.category.general=常规
+schematicaneo.config.category.general.tooltip=常规设置.
+schematicaneo.config.category.server=服务端
+schematicaneo.config.category.server.tooltip=服务端设置.
+
+# gui - config - debug
+schematicaneo.config.showDebugInfo=显示Debug信息
+schematicaneo.config.showDebugInfo.tooltip=在debug界面(F3)显示额外信息.
+
+# gui - config - render
+schematicaneo.config.alphaEnabled=启用Alpha
+schematicaneo.config.alphaEnabled.tooltip=启用透明材质.
+schematicaneo.config.alpha=Alpha
+schematicaneo.config.alpha.tooltip=渲染Schematic时的Alpha值(1.0 = 不透明, 0.5 = 半透明, 0.0 = 透明).
+schematicaneo.config.highlight=高亮方块
+schematicaneo.config.highlight.tooltip=高亮显示已放置的无效方块和要放置的方块.
+schematicaneo.config.highlightAir=高亮空气
+schematicaneo.config.highlightAir.tooltip=高亮显示必须留空的方块.
+schematicaneo.config.blockDelta=方块Delta
+schematicaneo.config.blockDelta.tooltip=高亮的Delta值(如果遇到了斑驳(z-fighting),请提升Delta值).
+schematicaneo.config.drawQuads=绘制表面
+schematicaneo.config.drawQuads.tooltip=绘制表面.
+schematicaneo.config.drawLines=绘制轮廓
+schematicaneo.config.drawLines.tooltip=绘制轮廓.
+
+# gui - config - printer
+schematicaneo.config.placeDelay=放置延迟
+schematicaneo.config.placeDelay.tooltip=放置尝试之间的延迟(单位tick).
+schematicaneo.config.timeout=暂停
+schematicaneo.config.timeout.tooltip=再尝试失败方块之前的暂停时间.
+schematicaneo.config.placeInstantly=立即放置
+schematicaneo.config.placeInstantly.tooltip=在1tick之内放置所有可放置方块.
+schematicaneo.config.destroyBlocks=破坏方块
+schematicaneo.config.destroyBlocks.tooltip=投影将可以破坏方块(创造模式专用).
+schematicaneo.config.destroyInstantly=立即破坏
+schematicaneo.config.destroyInstantly.tooltip=在1tick之内破坏所有可破坏方块.
+schematicaneo.config.placeAdjacent=仅相邻放置
+schematicaneo.config.placeAdjacent.tooltip=仅当旁边有一个相邻方块时,方可放置方块.
+
+# gui - config - printer - swap slots
+schematicaneo.config.swapSlot0=允许1号格
+schematicaneo.config.swapSlot0.tooltip=允许投影使用快捷栏1号格.
+schematicaneo.config.swapSlot1=允许2号格
+schematicaneo.config.swapSlot1.tooltip=允许投影使用快捷栏2号格.
+schematicaneo.config.swapSlot2=允许3号格
+schematicaneo.config.swapSlot2.tooltip=允许投影使用快捷栏3号格.
+schematicaneo.config.swapSlot3=允许4号格
+schematicaneo.config.swapSlot3.tooltip=允许投影使用快捷栏4号格.
+schematicaneo.config.swapSlot4=允许5号格
+schematicaneo.config.swapSlot4.tooltip=允许投影使用快捷栏5号格.
+schematicaneo.config.swapSlot5=允许6号格
+schematicaneo.config.swapSlot5.tooltip=允许投影使用快捷栏6号格.
+schematicaneo.config.swapSlot6=允许7号格
+schematicaneo.config.swapSlot6.tooltip=允许投影使用快捷栏7号格.
+schematicaneo.config.swapSlot7=允许8号格
+schematicaneo.config.swapSlot7.tooltip=允许投影使用快捷栏8号格.
+schematicaneo.config.swapSlot8=允许9号格
+schematicaneo.config.swapSlot8.tooltip=允许投影使用快捷栏9号格.
+
+# gui - config - general
+schematicaneo.config.schematicDirectory=Schematic目录
+schematicaneo.config.schematicDirectory.tooltip=Schematic目录.
+schematicaneo.config.extraAirBlocks=额外空气方块
+schematicaneo.config.extraAirBlocks.tooltip=要视为空气的Schematic渲染额外方块.
+
+# chat
+Schematica.chat.saveCoordinatesSuccess=保存坐标成功
+Schematica.chat.saveCoordinatesFail=保存坐标失败
+
+# gui - config - server
+schematicaneo.config.printerEnabled=启用投影
+schematicaneo.config.printerEnabled.tooltip=允许玩家使用投影.
+schematicaneo.config.saveEnabled=启用保存
+schematicaneo.config.saveEnabled.tooltip=允许玩家保存schematics.
+schematicaneo.config.loadEnabled=启用加载
+schematicaneo.config.loadEnabled.tooltip=允许玩家加载schematics.
+
+# keys
+schematicaneo.key.load=载入Schematic文件
+schematicaneo.key.save=打开功能界面
+schematicaneo.key.control=调整Schematic文件
+schematicaneo.key.layerInc=下一层
+schematicaneo.key.layerDec=上一层
+
+# commands - save
+schematica.command.save.usage=/schematicaSave <startX> <startY> <startZ> <endX> <endY> <endZ> <name>
+schematica.command.save.playersOnly=此指令只能由玩家使用.
+schematica.command.save.started=开始将 %d 区块保存至 %s.
+schematica.command.save.saveSucceeded=成功保存 %s.
+schematica.command.save.saveFailed=保存schematic %s 时遇到问题.
+schematica.command.save.quotaExceeded=你已经超出了服务器配额. 请使用/schematicaList 和/schematicaRemove 指令移除一些旧schematics.
+schematica.command.save.playerSchematicDirUnavailable=服务器遇到一个问题, 你的schematic未能保存. 请联系服务器管理员.
+
+# commands - list
+schematica.command.list.usage=/schematicaList [page]
+schematica.command.list.notAvailable=检索你的schematics列表时遇到问题.
+schematica.command.list.remove=移除
+schematica.command.list.download=下载
+schematica.command.list.header=--- 显示中schematics第%d页,共%d页 ---
+schematica.command.list.noSuchPage=无此页
+schematica.command.list.noSchematics=没有可用schematics.
+
+# commands - remove
+schematica.command.remove.usage=/schematicaRemove <name>
+schematica.command.remove.schematicRemoved=已移除Schematic "%s".
+schematica.command.remove.schematicNotFound=找不到Schematic "%s".
+schematica.command.remove.areYouSure=你确定?
+
+# commands - download
+schematica.command.download.usage=/schematicaDownload <name>
+schematica.command.download.started=开始下载 %s...
+schematica.command.download.downloadSucceeded=%s 下载成功.
+schematica.command.download.downloadFail=下载失败.
+
+itemGroup.SchematicaNeo=Schematica-Neo

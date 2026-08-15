@@ -1,0 +1,246 @@
+# gui - general
+schematica.gui.openFolder=Open schematic folder
+schematica.gui.done=Done
+schematica.gui.title=Select schematic file
+schematica.gui.folderInfo=(Place schematic files here)
+schematica.gui.noschematic=-- No schematic --
+schematica.gui.increase=+
+schematica.gui.decrease=-
+schematica.gui.hide=Hide
+schematica.gui.all=ALL
+schematica.gui.show=Show
+schematica.gui.movehere=Move here
+schematica.gui.flip=Flip
+schematica.gui.rotate=Rotate
+schematica.gui.name=Name
+schematica.gui.savecoordinates=Save Coordinates
+schematica.gui.moveschematic=Move schematic
+schematica.gui.layers=Layers
+schematica.gui.operations=Operations
+schematica.gui.unload=Unload
+schematica.gui.on=ON
+schematica.gui.off=OFF
+schematica.gui.x=X:
+schematica.gui.y=Y:
+schematica.gui.z=Z:
+schematica.gui.materials=Materials
+schematica.gui.materialname=Material
+schematica.gui.materialamount=Amount
+schematica.gui.materialrequired=Required
+schematica.gui.materialavailable=Available
+schematica.gui.materialdump=Save to file
+schematica.gui.printer=Printer
+
+# schematic editor
+schematica.editor.title=Schematic Editor
+schematica.editor.enable=Editor: %s
+schematica.editor.enable.tooltip=Enables all editor functions and may block normal controls while active.
+schematica.editor.mode=Mode: %s
+schematica.editor.selectionSource=Selection: %s
+schematica.editor.source.schematic=Schematic
+schematica.editor.source.world=Blocks
+schematica.editor.import=Import Structure
+schematica.editor.save.selection=Save Selection
+schematica.editor.save.edited=Save Schematic
+schematica.editor.save.selection.tooltip=Save blocks in the current selection as a new schematic. The Blocks/Schematic button selects the source.
+schematica.editor.save.edited.tooltip=Save the entire loaded schematic after cut, paste, replace, or metadata edits.
+schematica.editor.replace.config=Replace Settings
+schematica.editor.replace.title=Replace Block Settings
+schematica.editor.replace.help=Click a block item in the inventory to select the replacement target
+schematica.editor.replace.metadata=Metadata:
+schematica.editor.replace.target=Current target:
+schematica.editor.replace.none=None
+schematica.editor.import.title=Import Structure File
+schematica.editor.import.description=Imports structure files for use with ManaMetalMod. Blocks from Minecraft 1.13+ are converted through the ManaMetalMod mapping table. Unmapped blocks are replaced by numbered marker blocks and listed in a replacement reference. Marker blocks will not display correctly if the server does not have this mod, so singleplayer use is recommended.
+schematica.editor.import.tooltip=Import structure files from newer Minecraft versions
+schematica.editor.import.empty=No importable .nbt or .litematic files were found.
+schematica.editor.import.select=Click a file to start conversion
+schematica.editor.import.localFile=Save Local Reference File
+schematica.editor.import.book=Generate Reference Book
+schematica.editor.import.book.singleplayer=Reference books are available only in singleplayer
+schematica.editor.import.fileSaved=Reference file saved locally
+schematica.editor.import.fileSavedPath=Reference file saved: %s
+schematica.editor.import.reference.tooltip=Generate a replacement reference for missing blocks
+schematica.editor.import.formats=Supported formats: .nbt / .litematic
+schematica.editor.import.complete=Structure conversion complete
+schematica.editor.import.failed=Structure conversion failed
+schematica.editor.import.unknownCount=Unknown blocks: %d
+schematica.editor.import.bookTitle=Unknown Block Reference
+schematica.editor.import.bookCreated=Reference book added to inventory
+schematica.editor.import.completePath=Structure converted: %s
+schematica.editor.cornerSelection=Corner selection: %s
+schematica.editor.cornerSelection.tooltip=Allows the left and right mouse buttons to change the selection corners
+schematica.editor.selectionSource.tooltip=Selection source:\nBlocks: blocks in the world\nSchematic: the loaded schematic
+schematicaneo.gui.visibility.selection=Selection Visible
+schematicaneo.gui.visibility.block=Single Block Visible
+schematicaneo.gui.visibility.block.config=Configure Block
+schematicaneo.gui.visibility.block.title=Select Visible Block
+schematicaneo.gui.visibility.block.help=Click a block in the inventory to show only matching blocks and metadata
+schematicaneo.gui.printSpeed.minimum=Minimum
+schematicaneo.gui.printSpeed.slow=Slow
+schematicaneo.gui.printSpeed.medium=Medium
+schematicaneo.gui.printSpeed.fast=Fast
+schematicaneo.gui.printSpeed.faster=Faster
+schematicaneo.gui.printSpeed.high=High
+schematicaneo.gui.printSpeed.veryHigh=Very High
+schematicaneo.gui.printSpeed.maximum=Maximum
+schematicaneo.gui.printSpeed.tooltip=Printer speed levels (Fast is default; multiplayer servers are limited to 3.00x):\nMinimum: 0.27x  Slow: 0.43x  Medium: 0.60x\nFast: 1.00x (default)  Faster: 1.50x\nHigh: 3.00x  Very High: 6.00x  Maximum: 12.00x (singleplayer only)
+schematica.editor.help.controls=Shift+Wheel: Mode  Ctrl+Wheel: Size  Alt+Wheel: Position
+schematica.editor.help.action=Copy/Cut/Paste: Enter
+schematica.editor.currentRange=Current range: %s
+schematica.editor.range.single=Single
+schematica.editor.range.selection=Selection
+schematica.editor.range.all=All
+schematica.editor.mode.select=Selection
+schematica.editor.mode.select.tooltip=Select an area from the schematic or world. Ctrl+Wheel resizes the targeted face, Alt+Wheel moves the selection, and Alt+Middle Click centers it on the player.
+schematica.editor.mode.copy=Copy
+schematica.editor.mode.copy.tooltip=Press Enter to copy blocks in the current selection to the editor clipboard.
+schematica.editor.mode.paste=Paste
+schematica.editor.mode.paste.tooltip=Press Enter to start previewing, Alt+Wheel to move along the view direction, empty-hand right click to confirm, or left click to cancel.
+schematica.editor.mode.cut=Cut
+schematica.editor.mode.cut.tooltip=Press Enter to copy the selection and remove it when the selection source is the schematic.
+schematica.editor.mode.replace=Replace Blocks
+schematica.editor.mode.replace.tooltip=Alt+Wheel selects single, selection, or all scope. Empty-hand right click replaces matching blocks with the target configured by the replace tool.
+schematica.editor.mode.rotateMeta=Rotate Metadata
+schematica.editor.mode.rotateMeta.tooltip=Alt+Wheel selects single, selection, or all scope. Empty-hand right click increments metadata and left click decrements it.
+schematica.editor.mode.moveSchematic=Move Schematic
+schematica.editor.mode.moveSchematic.tooltip=Use Alt+Wheel to move the loaded schematic along the player's dominant view direction.
+schematica.editor.chat.prefix=§6[Schematic Editor] §7
+schematica.editor.chat.mode=Mode: %s
+schematica.editor.chat.source=Selection source: %s
+schematica.editor.chat.empty=Clipboard is empty
+schematica.editor.chat.preview=Paste preview started. Empty-hand right click to confirm or left click to cancel
+schematica.editor.chat.cancel=Paste preview canceled
+schematica.editor.chat.copy=Copied %dx%dx%d selection
+schematica.editor.chat.cut=Cut %dx%dx%d selection
+schematica.editor.chat.noSchematic=No schematic is loaded
+schematica.editor.chat.paste=Merged clipboard contents into the schematic
+schematica.editor.chat.replaceTarget=Configure a replacement block with the replace tool first
+schematica.editor.chat.replaced=Replaced %d blocks
+schematica.editor.chat.rotated=Rotated metadata for %d blocks
+schematica.editor.chat.range=Current operation range: %s
+
+# gui - config - categories
+schematicaneo.config.category.debug=Debug
+schematicaneo.config.category.debug.tooltip=Debug/developer settings.\nDon't touch unless you know what you're doing.
+schematicaneo.config.category.render=Rendering
+schematicaneo.config.category.render.tooltip=Render related settings.
+schematicaneo.config.category.printer=Printer
+schematicaneo.config.category.printer.tooltip=Printer related settings.
+schematicaneo.config.category.printer.swapslots=Hotbar Slots
+schematicaneo.config.category.printer.swapslots.tooltip=Allow the printer to use non empty hotbar slots.
+schematicaneo.config.category.general=General
+schematicaneo.config.category.general.tooltip=General settings.
+schematicaneo.config.category.server=Server
+schematicaneo.config.category.server.tooltip=Server-side settings.
+
+# gui - config - debug
+schematicaneo.config.showDebugInfo=Show Debug Info
+schematicaneo.config.showDebugInfo.tooltip=Display extra information on the debug screen (F3).
+
+# gui - config - render
+schematicaneo.config.alphaEnabled=Alpha Enabled
+schematicaneo.config.alphaEnabled.tooltip=Enable transparent textures.
+schematicaneo.config.alpha=Alpha
+schematicaneo.config.alpha.tooltip=Alpha value used when rendering the schematic (1.0 = opaque, 0.5 = half transparent, 0.0 = transparent).
+schematicaneo.config.highlight=Highlight Blocks
+schematicaneo.config.highlight.tooltip=Highlight invalid placed blocks and to be placed blocks.
+schematicaneo.config.highlightAir=Highlight Air
+schematicaneo.config.highlightAir.tooltip=Highlight blocks that should be air.
+schematicaneo.config.blockDelta=Block Delta
+schematicaneo.config.blockDelta.tooltip=Delta value used for highlighting (if you experience z-fighting increase this).
+schematicaneo.config.drawQuads=Draw Quads
+schematicaneo.config.drawQuads.tooltip=Draw surface areas.
+schematicaneo.config.drawLines=Draw Lines
+schematicaneo.config.drawLines.tooltip=Draw outlines.
+
+# gui - config - printer
+schematicaneo.config.placeDelay=Placement Delay
+schematicaneo.config.placeDelay.tooltip=Delay between placement attempts (in ticks).
+schematicaneo.config.timeout=Timeout
+schematicaneo.config.timeout.tooltip=Timeout before re-trying failed blocks.
+schematicaneo.config.placeInstantly=Place Instantly
+schematicaneo.config.placeInstantly.tooltip=Place all blocks that can be placed in one tick.
+schematicaneo.config.destroyBlocks=Destroy Blocks
+schematicaneo.config.destroyBlocks.tooltip=The printer will destroy blocks (creative mode only).
+schematicaneo.config.destroyInstantly=Destroy Instantly
+schematicaneo.config.destroyInstantly.tooltip=Destroy all blocks that can be destroyed in one tick.
+schematicaneo.config.placeAdjacent=Place Only Adjacent
+schematicaneo.config.placeAdjacent.tooltip=Place blocks only if there is an adjacent block next to them.
+
+# gui - config - printer - swap slots
+schematicaneo.config.swapSlot0=Allow Slot 1
+schematicaneo.config.swapSlot0.tooltip=Allow the printer to use the hotbar slot 1.
+schematicaneo.config.swapSlot1=Allow Slot 2
+schematicaneo.config.swapSlot1.tooltip=Allow the printer to use the hotbar slot 2.
+schematicaneo.config.swapSlot2=Allow Slot 3
+schematicaneo.config.swapSlot2.tooltip=Allow the printer to use the hotbar slot 3.
+schematicaneo.config.swapSlot3=Allow Slot 4
+schematicaneo.config.swapSlot3.tooltip=Allow the printer to use the hotbar slot 4.
+schematicaneo.config.swapSlot4=Allow Slot 5
+schematicaneo.config.swapSlot4.tooltip=Allow the printer to use the hotbar slot 5.
+schematicaneo.config.swapSlot5=Allow Slot 6
+schematicaneo.config.swapSlot5.tooltip=Allow the printer to use the hotbar slot 6.
+schematicaneo.config.swapSlot6=Allow Slot 7
+schematicaneo.config.swapSlot6.tooltip=Allow the printer to use the hotbar slot 7.
+schematicaneo.config.swapSlot7=Allow Slot 8
+schematicaneo.config.swapSlot7.tooltip=Allow the printer to use the hotbar slot 8.
+schematicaneo.config.swapSlot8=Allow Slot 9
+schematicaneo.config.swapSlot8.tooltip=Allow the printer to use the hotbar slot 9.
+
+# gui - config - general
+schematicaneo.config.schematicDirectory=Schematic Directory
+schematicaneo.config.schematicDirectory.tooltip=Schematic directory.
+schematicaneo.config.extraAirBlocks=Extra Air Blocks
+schematicaneo.config.extraAirBlocks.tooltip=Extra blocks to consider as air for the schematic renderer.
+
+# chat
+Schematica.chat.saveCoordinatesSuccess=Successfully saved coordinates
+Schematica.chat.saveCoordinatesFail=Failed to save coordinates
+
+# gui - config - server
+schematicaneo.config.printerEnabled=Allow Printer
+schematicaneo.config.printerEnabled.tooltip=Allow players to use the printer.
+schematicaneo.config.saveEnabled=Allow Saving
+schematicaneo.config.saveEnabled.tooltip=Allow players to save schematics.
+schematicaneo.config.loadEnabled=Allow Loading
+schematicaneo.config.loadEnabled.tooltip=Allow players to load schematics.
+
+# keys
+schematicaneo.key.load=Load schematic
+schematicaneo.key.save=Open Function Screen
+schematicaneo.key.control=Manipulate schematic
+schematicaneo.key.layerInc=Next Layer
+schematicaneo.key.layerDec=Previous layer
+
+# commands - save
+schematica.command.save.usage=/schematicaSave <startX> <startY> <startZ> <endX> <endY> <endZ> <name>
+schematica.command.save.playersOnly=This command can only be used by players.
+schematica.command.save.started=Started saving %d chunks into %s.
+schematica.command.save.saveSucceeded=Successfully saved %s.
+schematica.command.save.saveFailed=There was a problem saving the schematic %s.
+schematica.command.save.quotaExceeded=You have exceeded your quota on the server. Please use /schematicaList and /schematicaRemove to remove some old schematics.
+schematica.command.save.playerSchematicDirUnavailable=There was a problem on the server and your schematic was not saved. Please contact the server administrator.
+
+# commands - list
+schematica.command.list.usage=/schematicaList [page]
+schematica.command.list.notAvailable=There was a problem retrieving your list of schematics.
+schematica.command.list.remove=Remove
+schematica.command.list.download=Download
+schematica.command.list.header=--- Showing schematics page %d of %d ---
+schematica.command.list.noSuchPage=No such page
+schematica.command.list.noSchematics=You have no schematics available.
+
+# commands - remove
+schematica.command.remove.usage=/schematicaRemove <name>
+schematica.command.remove.schematicRemoved=Schematic "%s" removed.
+schematica.command.remove.schematicNotFound=Schematic "%s" could not be found.
+schematica.command.remove.areYouSure=Are you sure?
+
+# commands - download
+schematica.command.download.usage=/schematicaDownload <name>
+schematica.command.download.started=Started downloading %s...
+schematica.command.download.downloadSucceeded=Successfully downloaded %s.
+schematica.command.download.downloadFail=Download failed.
+
+itemGroup.SchematicaNeo=Schematica-Neo
