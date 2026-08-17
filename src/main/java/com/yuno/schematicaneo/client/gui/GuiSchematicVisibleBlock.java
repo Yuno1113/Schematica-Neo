@@ -8,11 +8,14 @@ import com.yuno.schematicaneo.reference.Names;
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+
+import org.lwjgl.input.Keyboard;
 
 public class GuiSchematicVisibleBlock extends GuiScreen {
 
@@ -21,6 +24,7 @@ public class GuiSchematicVisibleBlock extends GuiScreen {
     private final GuiScreen parent;
     private int left;
     private int top;
+    private GuiTextField metadataField;
 
     public GuiSchematicVisibleBlock(GuiScreen parent) {
         this.parent = parent;
@@ -29,41 +33,70 @@ public class GuiSchematicVisibleBlock extends GuiScreen {
     @Override
     public void initGui() {
         this.left = (this.width - 176) / 2;
-        this.top = (this.height - 132) / 2;
-        this.buttonList.add(new GuiButton(1, this.left + 118, this.top + 6, 50, 20, I18n.format(Names.Gui.DONE)));
+        this.top = (this.height - 150) / 2;
+        this.metadataField = new GuiTextField(this.fontRendererObj, this.left + 86, this.top + 30, 35, 18);
+        this.metadataField.setMaxStringLength(10);
+        this.metadataField.setText(Integer.toString(
+            ClientProxy.schematic == null ? 0 : Math.max(0, ClientProxy.schematic.visibilityMetadata)));
+        this.buttonList.add(new GuiButton(1, this.left + 126, this.top + 29, 42, 20, I18n.format(Names.Gui.DONE)));
     }
 
     @Override
     protected void actionPerformed(GuiButton button) {
-        if (button.id == 1) this.mc.displayGuiScreen(this.parent);
+        if (button.id == 1) {
+            applyMetadata();
+            this.mc.displayGuiScreen(this.parent);
+        }
     }
 
     @Override
     protected void mouseClicked(int mouseX, int mouseY, int mouseButton) {
+        boolean wasMetadataFocused = this.metadataField.isFocused();
         super.mouseClicked(mouseX, mouseY, mouseButton);
+        this.metadataField.mouseClicked(mouseX, mouseY, mouseButton);
+        if (wasMetadataFocused && !this.metadataField.isFocused()) applyMetadata();
         if (mouseButton != 0 || ClientProxy.schematic == null) return;
         int slot = getSlot(mouseX, mouseY);
         if (slot < 0) return;
         ItemStack stack = this.mc.thePlayer.inventory.getStackInSlot(slot);
         if (stack != null && stack.getItem() instanceof ItemBlock) {
             Block block = Block.getBlockFromItem(stack.getItem());
+            if (block == null) return;
             ClientProxy.schematic.visibilityBlock = block;
-            ClientProxy.schematic.visibilityMetadata = stack.getItemDamage();
+            ClientProxy.schematic.visibilityMetadata = Math.max(0, stack.getItemDamage());
             ClientProxy.schematic.visibilityMode = SchematicWorld.VISIBILITY_BLOCK;
             ClientProxy.schematic.isRenderingLayer = false;
+            this.metadataField.setText(Integer.toString(ClientProxy.schematic.visibilityMetadata));
             RendererSchematicGlobal.INSTANCE.refresh();
         }
     }
 
     @Override
+    protected void keyTyped(char character, int keyCode) {
+        if (this.metadataField.isFocused()) {
+            if (keyCode == Keyboard.KEY_ESCAPE) {
+                applyMetadata();
+                this.metadataField.setFocused(false);
+            } else if (keyCode == Keyboard.KEY_RETURN || keyCode == Keyboard.KEY_NUMPADENTER) {
+                applyMetadata();
+                this.metadataField.setFocused(false);
+            } else {
+                this.metadataField.textboxKeyTyped(character, keyCode);
+            }
+            return;
+        }
+        super.keyTyped(character, keyCode);
+    }
+
+    @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
         drawDefaultBackground();
-        drawRect(this.left, this.top, this.left + 176, this.top + 132, 0xFFC6C6C6);
+        drawRect(this.left, this.top, this.left + 176, this.top + 150, 0xFFC6C6C6);
         this.fontRendererObj.drawString(I18n.format(Names.Gui.Control.VISIBILITY_BLOCK_TITLE), this.left + 8, this.top + 8, 0x404040);
-        this.fontRendererObj.drawString(I18n.format(Names.Gui.Control.VISIBILITY_BLOCK_HELP), this.left + 8, this.top + 31, 0x555555);
+        this.fontRendererObj.drawString(I18n.format(Names.Gui.Control.VISIBILITY_BLOCK_METADATA), this.left + 8, this.top + 35, 0x404040);
         for (int row = 0; row < 4; row++) for (int column = 0; column < 9; column++) {
             int x = this.left + 7 + column * SLOT;
-            int y = this.top + 50 + row * SLOT + (row == 3 ? 4 : 0);
+            int y = this.top + 68 + row * SLOT + (row == 3 ? 4 : 0);
             drawRect(x, y, x + SLOT, y + SLOT, 0xFF777777);
         }
         RenderHelper.enableGUIStandardItemLighting();
@@ -73,20 +106,45 @@ public class GuiSchematicVisibleBlock extends GuiScreen {
             int row = slot < 9 ? 3 : (slot - 9) / 9;
             int column = slot < 9 ? slot : (slot - 9) % 9;
             int x = this.left + 8 + column * SLOT;
-            int y = this.top + 51 + row * SLOT + (row == 3 ? 4 : 0);
+            int y = this.top + 69 + row * SLOT + (row == 3 ? 4 : 0);
             ITEM_RENDERER.renderItemAndEffectIntoGUI(this.fontRendererObj, this.mc.getTextureManager(), stack, x, y);
         }
         RenderHelper.disableStandardItemLighting();
+        this.metadataField.drawTextBox();
         super.drawScreen(mouseX, mouseY, partialTicks);
     }
 
     private int getSlot(int mouseX, int mouseY) {
         int x = mouseX - (this.left + 7);
-        int y = mouseY - (this.top + 50);
+        int y = mouseY - (this.top + 68);
         if (x < 0 || x >= SLOT * 9 || y < 0) return -1;
         int column = x / SLOT;
         if (y >= SLOT * 3 + 4 && y < SLOT * 4 + 4) return column;
         int row = y / SLOT;
         return row >= 0 && row < 3 ? 9 + row * 9 + column : -1;
+    }
+
+    private void applyMetadata() {
+        int metadata = 0;
+        try {
+            metadata = Integer.parseInt(this.metadataField.getText());
+        } catch (NumberFormatException ignored) {}
+        metadata = Math.max(0, metadata);
+        this.metadataField.setText(Integer.toString(metadata));
+        if (ClientProxy.schematic != null && ClientProxy.schematic.visibilityMetadata != metadata) {
+            ClientProxy.schematic.visibilityMetadata = metadata;
+            RendererSchematicGlobal.INSTANCE.refresh();
+        }
+    }
+
+    @Override
+    public void onGuiClosed() {
+        applyMetadata();
+        super.onGuiClosed();
+    }
+
+    @Override
+    public boolean doesGuiPauseGame() {
+        return false;
     }
 }

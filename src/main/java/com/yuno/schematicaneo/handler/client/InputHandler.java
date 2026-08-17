@@ -31,23 +31,23 @@ public class InputHandler {
 
     private static final KeyBinding KEY_BINDING_LOAD = new KeyBinding(
         Names.Keys.LOAD,
-        SchematicaNeo.proxy.GTNH ? Keyboard.KEY_NONE : Keyboard.KEY_DIVIDE,
+        Keyboard.KEY_DOWN,
         Names.Keys.CATEGORY);
     private static final KeyBinding KEY_BINDING_SAVE = new KeyBinding(
         Names.Keys.SAVE,
-        SchematicaNeo.proxy.GTNH ? Keyboard.KEY_NONE : Keyboard.KEY_MULTIPLY,
+        Keyboard.KEY_UP,
         Names.Keys.CATEGORY);
     private static final KeyBinding KEY_BINDING_CONTROL = new KeyBinding(
         Names.Keys.CONTROL,
-        SchematicaNeo.proxy.GTNH ? Keyboard.KEY_NONE : Keyboard.KEY_SUBTRACT,
+        Keyboard.KEY_N,
         Names.Keys.CATEGORY);
     private static final KeyBinding KEY_BINDING_LAYER_INC = new KeyBinding(
         Names.Keys.LAYER_INC,
-        Keyboard.KEY_NONE,
+        Keyboard.KEY_NEXT,
         Names.Keys.CATEGORY);
     private static final KeyBinding KEY_BINDING_LAYER_DEC = new KeyBinding(
         Names.Keys.LAYER_DEC,
-        Keyboard.KEY_NONE,
+        Keyboard.KEY_PRIOR,
         Names.Keys.CATEGORY);
 
     public static final KeyBinding[] KEY_BINDINGS = new KeyBinding[] { KEY_BINDING_LOAD, KEY_BINDING_SAVE,

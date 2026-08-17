@@ -6,6 +6,7 @@ import java.util.List;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigCategory;
 import net.minecraftforge.common.config.ConfigElement;
+import net.minecraft.client.resources.I18n;
 
 import com.yuno.schematicaneo.handler.ConfigurationHandler;
 import com.yuno.schematicaneo.reference.Names;
@@ -24,6 +25,7 @@ public class GuiModConfig extends GuiConfig {
             false,
             false,
             GuiConfig.getAbridgedConfigPath(ConfigurationHandler.configuration.toString()));
+        this.titleLine2 = I18n.format(Names.Gui.Control.CONFIG_RESTART_WARNING);
     }
 
     private static List<IConfigElement> getConfigElements() {

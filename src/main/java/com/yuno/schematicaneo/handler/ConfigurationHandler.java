@@ -43,6 +43,7 @@ public class ConfigurationHandler {
     public static final boolean DESTROY_BLOCKS_DEFAULT = false;
     public static final boolean DESTROY_INSTANTLY_DEFAULT = false;
     public static final boolean PLACE_ADJACENT_DEFAULT = true;
+    public static final boolean ALLOW_MULTIPLAYER_HIGH_SPEED_DEFAULT = false;
     public static final boolean[] SWAP_SLOTS_DEFAULT = new boolean[] { false, false, false, false, false, true, true,
         true, true };
     public static final String SCHEMATIC_DIRECTORY_STR = "schematics";
@@ -73,6 +74,7 @@ public class ConfigurationHandler {
     public static boolean destroyBlocks = DESTROY_BLOCKS_DEFAULT;
     public static boolean destroyInstantly = DESTROY_INSTANTLY_DEFAULT;
     public static boolean placeAdjacent = PLACE_ADJACENT_DEFAULT;
+    public static boolean allowMultiplayerHighSpeed = ALLOW_MULTIPLAYER_HIGH_SPEED_DEFAULT;
     public static boolean[] swapSlots = SWAP_SLOTS_DEFAULT;
     public static final Queue<Integer> swapSlotsQueue = new ArrayDeque<>();
     public static File schematicDirectory = SCHEMATIC_DIRECTORY_DEFAULT;
@@ -99,6 +101,7 @@ public class ConfigurationHandler {
     public static Property propDestroyBlocks = null;
     public static Property propDestroyInstantly = null;
     public static Property propPlaceAdjacent = null;
+    public static Property propAllowMultiplayerHighSpeed = null;
     public static Property[] propSwapSlots = new Property[SWAP_SLOTS_DEFAULT.length];
     public static Property propSchematicDirectory = null;
     public static Property propExtraAirBlocks = null;
@@ -230,6 +233,14 @@ public class ConfigurationHandler {
             Names.Config.PLACE_ADJACENT_DESC);
         propPlaceAdjacent.setLanguageKey(Names.Config.LANG_PREFIX + "." + Names.Config.PLACE_ADJACENT);
         placeAdjacent = propPlaceAdjacent.getBoolean(PLACE_ADJACENT_DEFAULT);
+
+        propAllowMultiplayerHighSpeed = configuration.get(
+            Names.Config.Category.PRINTER,
+            Names.Config.ALLOW_MULTIPLAYER_HIGH_SPEED,
+            ALLOW_MULTIPLAYER_HIGH_SPEED_DEFAULT,
+            Names.Config.ALLOW_MULTIPLAYER_HIGH_SPEED_DESC);
+        propAllowMultiplayerHighSpeed.setShowInGui(false);
+        allowMultiplayerHighSpeed = propAllowMultiplayerHighSpeed.getBoolean(ALLOW_MULTIPLAYER_HIGH_SPEED_DEFAULT);
 
         swapSlotsQueue.clear();
         for (int i = 0; i < SWAP_SLOTS_DEFAULT.length; i++) {

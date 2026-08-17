@@ -7,7 +7,7 @@ public class Reference {
 
     public static final String MODID = "schematicaneo";
     public static final String NAME = "Schematica-Neo";
-    public static final String VERSION = "0.1.0";
+    public static final String VERSION = "0.1.1";
     public static final String DEPENDENCIES = "required-after:LunatriusCore;";
     public static final String PROXY_SERVER = "com.yuno.schematicaneo.proxy.ServerProxy";
     public static final String PROXY_CLIENT = "com.yuno.schematicaneo.proxy.ClientProxy";

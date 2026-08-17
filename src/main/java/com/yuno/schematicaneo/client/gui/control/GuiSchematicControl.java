@@ -15,6 +15,7 @@ import com.github.lunatrius.core.util.vector.Vector3i;
 import com.yuno.schematicaneo.handler.AutoPlaceHandler;
 import com.yuno.schematicaneo.SchematicaNeo;
 import com.yuno.schematicaneo.client.gui.util.GuiOrCheckBoxHandler;
+import com.yuno.schematicaneo.client.gui.GuiModConfig;
 import com.yuno.schematicaneo.client.gui.GuiSchematicVisibleBlock;
 import com.yuno.schematicaneo.client.printer.SchematicPrinter;
 import com.yuno.schematicaneo.client.renderer.RendererSchematicGlobal;
@@ -39,6 +40,7 @@ public class GuiSchematicControl extends GuiScreenBase {
     private GuiNumericField numericZ = null;
 
     private GuiButton btnUnload = null;
+    private GuiButton btnConfig = null;
     private GuiButton btnLayerMode = null;
     private GuiButton btnBlockVisibility = null;
     private GuiNumericField nfLayer = null;
@@ -103,6 +105,9 @@ public class GuiSchematicControl extends GuiScreenBase {
         this.buttonList.clear();
 
         int id = 0;
+
+        this.btnConfig = new GuiButton(id++, 10, 10, 80, 20, I18n.format(Names.Gui.Control.CONFIG));
+        this.buttonList.add(this.btnConfig);
 
         this.numericX = new GuiNumericField(this.fontRendererObj, id++, this.centerX - 50, this.centerY - 30, 100, 20);
         this.buttonList.add(this.numericX);
@@ -311,6 +316,10 @@ public class GuiSchematicControl extends GuiScreenBase {
             return;
         }
         if (guiButton.enabled) {
+            if (guiButton.id == this.btnConfig.id) {
+                this.mc.displayGuiScreen(new GuiModConfig(this));
+                return;
+            }
             if (this.schematic == null) {
                 return;
             }
@@ -466,13 +475,15 @@ public class GuiSchematicControl extends GuiScreenBase {
     }
 
     private boolean isSpeedAllowed(int index) {
-        if (this.mc.isSingleplayer()) return true;
+        if (this.mc.isSingleplayer() || ConfigurationHandler.allowMultiplayerHighSpeed) return true;
         for (int allowed : MULTIPLAYER_SPEED_ORDER) if (allowed == index) return true;
         return false;
     }
 
     private int getNextSpeedIndex() {
-        if (this.mc.isSingleplayer()) return (this.speedIndex + 1) % SPEED_DELAYS.length;
+        if (this.mc.isSingleplayer() || ConfigurationHandler.allowMultiplayerHighSpeed) {
+            return (this.speedIndex + 1) % SPEED_DELAYS.length;
+        }
         for (int i = 0; i < MULTIPLAYER_SPEED_ORDER.length; i++) {
             if (MULTIPLAYER_SPEED_ORDER[i] == this.speedIndex) {
                 return MULTIPLAYER_SPEED_ORDER[(i + 1) % MULTIPLAYER_SPEED_ORDER.length];

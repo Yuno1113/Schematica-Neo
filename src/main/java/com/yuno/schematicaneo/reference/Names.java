@@ -47,6 +47,8 @@ public final class Names {
         public static final String DESTROY_INSTANTLY_DESC = "Destroy all blocks that can be destroyed in one tick.";
         public static final String PLACE_ADJACENT = "placeAdjacent";
         public static final String PLACE_ADJACENT_DESC = "Place blocks only if there is an adjacent block next to them.";
+        public static final String ALLOW_MULTIPLAYER_HIGH_SPEED = "allowMultiplayerHighSpeed";
+        public static final String ALLOW_MULTIPLAYER_HIGH_SPEED_DESC = "Allow all printer speed presets in multiplayer.";
         public static final String SWAP_SLOT = "swapSlot";
         public static final String SWAP_SLOT_DESC = "Allow the printer to use this hotbar slot.";
 
@@ -247,6 +249,9 @@ public final class Names {
             public static final String VISIBILITY_BLOCK_CONFIG = "schematicaneo.gui.visibility.block.config";
             public static final String VISIBILITY_BLOCK_TITLE = "schematicaneo.gui.visibility.block.title";
             public static final String VISIBILITY_BLOCK_HELP = "schematicaneo.gui.visibility.block.help";
+            public static final String VISIBILITY_BLOCK_METADATA = "schematicaneo.gui.visibility.block.metadata";
+            public static final String CONFIG = "schematicaneo.gui.config";
+            public static final String CONFIG_RESTART_WARNING = "schematicaneo.gui.config.restartWarning";
             public static final String PRINT_SPEED_PREFIX = "schematicaneo.gui.printSpeed.";
             public static final String PRINT_SPEED_TOOLTIP = PRINT_SPEED_PREFIX + "tooltip";
             public static final String TRANSFORM_PREFIX = "schematica.gui.";

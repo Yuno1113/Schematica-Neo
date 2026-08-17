@@ -134,6 +134,7 @@ public class RendererSchematicChunk {
 
     public void setDirty() {
         this.needsUpdate = true;
+        this.hasBlocksChecked = false;
     }
 
     public boolean getDirty() {

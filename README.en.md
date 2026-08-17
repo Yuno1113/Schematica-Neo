@@ -12,15 +12,14 @@ Some of the code in this mod was generated, refactored, debugged, and organized 
 
 ### Schematic Loading and Controls
 
-- Load and render `.schematic` files.
+- Load `.schematic` files.
 - Move, rotate, flip, and unload schematics.
 - Save schematic coordinates and transformation states.
 - Use several schematic visibility modes:
   - Show all
   - Layer view
   - Selection view
-  - Single-block view
-- Select a target block and metadata from the inventory in single-block view.
+  - Single-block view, with inventory block selection and editable metadata
 - Hide or show the current schematic.
 
 ### Schematic Editing
@@ -38,11 +37,11 @@ The unified schematic editor provides the following modes when editing is enable
   - Copy blocks from the world or the schematic into a temporary buffer.
 
 - **Cut**
-  - Copy the selected schematic blocks into the buffer and remove them from the current schematic.
+  - Copy the selected blocks into the buffer and remove them from the currently loaded schematic.
 
 - **Paste**
   - Preview the buffered blocks and their bounds before merging them.
-  - Move the paste position along the player's view direction.
+  - Use `Alt + Mouse Wheel` to move the paste position along the player's view direction.
   - Preserve existing non-air schematic blocks at overlapping positions when merging.
   - Automatically expand the schematic when the paste range exceeds its current bounds.
 
@@ -65,7 +64,7 @@ Saving is available in two forms:
 
 - **Save Selection**
   - Save the current selection as a new schematic file.
-  - Choose whether blocks are read from the actual world or the current schematic.
+  - Choose whether blocks are read from the actual world or the currently loaded schematic.
 
 - **Save Schematic**
   - Save the complete schematic after copy, cut, paste, replacement, or metadata edits.
@@ -76,7 +75,7 @@ Schematica-Neo can convert some structure files from newer Minecraft versions in
 
 Supported formats currently include:
 
-- Vanilla `.nbt` structure files
+- `.nbt` structure files from vanilla Minecraft and Create
 - `.litematic` files
 
 This conversion feature is primarily designed for **ManaMetalMod** environments. Using the block mapping tables included in the project, it maps block states from Minecraft 1.13 and newer to corresponding Minecraft 1.7.10 or ManaMetalMod blocks.
@@ -106,7 +105,7 @@ Because marker blocks are provided by Schematica-Neo, they may not render correc
 - Use multiple printing speed levels.
 - The default speed is `Fast`.
 - Experimental high-speed levels are available in single-player.
-- Multiplayer printing is limited to `3x` to avoid excessive placement rates and reduce the impact on server balance.
+- Multiplayer printing is limited to `3x`.
 - Handle placement direction and click positions for slabs, stairs, pistons, torches, doors, hoppers, and other blocks with special placement rules.
 
 ## ManaMetalMod Compatibility
@@ -115,7 +114,7 @@ The project includes compatibility features for **ManaMetalMod**, including:
 
 - Mapping newer-version blocks to ManaMetalMod blocks. See the [ManaMetalMod block mapping table](src/main/resources/assets/schematicaneo/mmm_blocks_reference.txt) and the [vanilla block mapping table](src/main/resources/assets/schematicaneo/vanilla_blocks_reference.txt).
 - Isolating preview errors caused by special ManaMetalMod blocks.
-- Special metadata handling for ManaMetalMod slabs.
+- Special metadata handling for ManaMetalMod slabs whose rules differ from vanilla slabs.
 - Extended metadata reading, editing, and saving support.
 
 These compatibility rules only apply to the `manametalmod` registry namespace and do not change the metadata rules for vanilla slabs.
@@ -136,7 +135,7 @@ Key bindings can be changed in Minecraft's controls settings.
 - Minecraft `1.7.10`
 - Minecraft Forge `10.13.4.1614`
 - Java 8
-- LunatriusCore
+- [LunatriusCore](https://github.com/GTNewHorizons/LunatriusCore)
 - Works in single-player and multiplayer
 - Additional compatibility with ManaMetalMod
 
