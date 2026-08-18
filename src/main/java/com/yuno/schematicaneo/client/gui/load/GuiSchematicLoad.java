@@ -39,6 +39,7 @@ public class GuiSchematicLoad extends GuiScreenBase {
     protected File currentDirectory = ConfigurationHandler.schematicDirectory;
     private GuiSchematicLoadSlot guiSchematicLoadSlot;
     private GuiButton btnOpenDir = null;
+    private GuiButton btnParentDir = null;
     private GuiButton btnDone = null;
 
     public GuiSchematicLoad(GuiScreen guiScreen) {
@@ -48,6 +49,15 @@ public class GuiSchematicLoad extends GuiScreenBase {
     @Override
     public void initGui() {
         int id = 0;
+
+        this.btnParentDir = new GuiButton(
+            id++,
+            this.width / 2 - 229,
+            this.height - 36,
+            70,
+            20,
+            I18n.format(Names.Gui.Load.PARENT_FOLDER));
+        this.buttonList.add(this.btnParentDir);
 
         this.btnOpenDir = new GuiButton(
             id++,
@@ -69,7 +79,9 @@ public class GuiSchematicLoad extends GuiScreenBase {
     @Override
     protected void actionPerformed(GuiButton guiButton) {
         if (guiButton.enabled) {
-            if (guiButton.id == this.btnOpenDir.id) {
+            if (guiButton.id == this.btnParentDir.id) {
+                goToParentDirectory();
+            } else if (guiButton.id == this.btnOpenDir.id) {
                 boolean retry = false;
 
                 try {
@@ -77,7 +89,7 @@ public class GuiSchematicLoad extends GuiScreenBase {
                     Object m = c.getMethod("getDesktop")
                         .invoke(null);
                     c.getMethod("open", File.class)
-                        .invoke(m, ConfigurationHandler.schematicDirectory);
+                        .invoke(m, this.currentDirectory);
                 } catch (Throwable e) {
                     retry = true;
                 }
@@ -85,7 +97,7 @@ public class GuiSchematicLoad extends GuiScreenBase {
                 if (retry) {
                     try {
                         Runtime.getRuntime().exec(
-                            new String[] { "explorer.exe", ConfigurationHandler.schematicDirectory.getAbsolutePath() });
+                            new String[] { "explorer.exe", this.currentDirectory.getAbsolutePath() });
                     } catch (IOException e) {
                         Reference.logger.error("Could not open schematic directory", e);
                     }
@@ -106,15 +118,33 @@ public class GuiSchematicLoad extends GuiScreenBase {
         this.guiSchematicLoadSlot.drawScreen(x, y, partialTicks);
 
         drawCenteredString(this.fontRendererObj, this.strTitle, this.width / 2, 4, 0x00FFFFFF);
-        drawCenteredString(this.fontRendererObj, this.strFolderInfo, this.width / 2 - 78, this.height - 12, 0x00808080);
+        drawCenteredString(this.fontRendererObj, this.strFolderInfo, this.width / 2, this.height - 12, 0x00808080);
+        String path = this.currentDirectory.getAbsolutePath();
+        if (path.length() > 90) path = "..." + path.substring(path.length() - 87);
+        drawString(this.fontRendererObj, path, 8, 18, 0x00C0C0C0);
 
         super.drawScreen(x, y, partialTicks);
     }
 
     protected void changeDirectory(String directory) {
-        this.currentDirectory = new File(this.currentDirectory, directory);
+        File target = new File(this.currentDirectory, directory);
+        if (target.isDirectory()) {
+            this.currentDirectory = target;
+            reloadSchematics();
+        }
+    }
 
-        reloadSchematics();
+    private void goToParentDirectory() {
+        try {
+            File root = ConfigurationHandler.schematicDirectory.getCanonicalFile();
+            File current = this.currentDirectory.getCanonicalFile();
+            if (!current.equals(root) && current.getParentFile() != null) {
+                this.currentDirectory = current.getParentFile();
+                reloadSchematics();
+            }
+        } catch (IOException e) {
+            Reference.logger.error("Could not navigate to parent schematic directory", e);
+        }
     }
 
     protected void reloadSchematics() {
@@ -122,6 +152,8 @@ public class GuiSchematicLoad extends GuiScreenBase {
         Item item;
 
         this.schematicFiles.clear();
+
+        this.btnParentDir.enabled = !isRootDirectory();
 
         try {
             if (!this.currentDirectory.getCanonicalPath()
@@ -161,6 +193,15 @@ public class GuiSchematicLoad extends GuiScreenBase {
                 this.schematicFiles
                     .add(new GuiSchematicEntry(name, SchematicUtil.getIconFromFile(file), file.isDirectory()));
             }
+        }
+    }
+
+    private boolean isRootDirectory() {
+        try {
+            return this.currentDirectory.getCanonicalFile()
+                .equals(ConfigurationHandler.schematicDirectory.getCanonicalFile());
+        } catch (IOException e) {
+            return true;
         }
     }
 

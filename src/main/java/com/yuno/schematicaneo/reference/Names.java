@@ -159,6 +159,7 @@ public final class Names {
             public static final String TITLE = "schematica.gui.title";
             public static final String FOLDER_INFO = "schematica.gui.folderInfo";
             public static final String OPEN_FOLDER = "schematica.gui.openFolder";
+            public static final String PARENT_FOLDER = "schematica.gui.parentFolder";
             public static final String NO_SCHEMATIC = "schematica.gui.noschematic";
         }
 

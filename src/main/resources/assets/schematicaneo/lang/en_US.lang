@@ -1,5 +1,6 @@
 # gui - general
 schematica.gui.openFolder=Open schematic folder
+schematica.gui.parentFolder=Parent folder
 schematica.gui.done=Done
 schematica.gui.title=Select schematic file
 schematica.gui.folderInfo=(Place schematic files here)
@@ -77,8 +78,6 @@ schematicaneo.gui.visibility.block.config=Configure Block
 schematicaneo.gui.visibility.block.title=Select Visible Block
 schematicaneo.gui.visibility.block.help=Click a block in the inventory to show only matching blocks and metadata
 schematicaneo.gui.visibility.block.metadata=Metadata:
-schematicaneo.gui.config=Configuration
-schematicaneo.gui.config.restartWarning=Experimental: some settings may require a game restart
 schematicaneo.gui.printSpeed.minimum=Minimum
 schematicaneo.gui.printSpeed.slow=Slow
 schematicaneo.gui.printSpeed.medium=Medium

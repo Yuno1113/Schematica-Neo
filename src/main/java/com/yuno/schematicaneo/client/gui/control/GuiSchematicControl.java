@@ -15,7 +15,6 @@ import com.github.lunatrius.core.util.vector.Vector3i;
 import com.yuno.schematicaneo.handler.AutoPlaceHandler;
 import com.yuno.schematicaneo.SchematicaNeo;
 import com.yuno.schematicaneo.client.gui.util.GuiOrCheckBoxHandler;
-import com.yuno.schematicaneo.client.gui.GuiModConfig;
 import com.yuno.schematicaneo.client.gui.GuiSchematicVisibleBlock;
 import com.yuno.schematicaneo.client.printer.SchematicPrinter;
 import com.yuno.schematicaneo.client.renderer.RendererSchematicGlobal;
@@ -40,7 +39,6 @@ public class GuiSchematicControl extends GuiScreenBase {
     private GuiNumericField numericZ = null;
 
     private GuiButton btnUnload = null;
-    private GuiButton btnConfig = null;
     private GuiButton btnLayerMode = null;
     private GuiButton btnBlockVisibility = null;
     private GuiNumericField nfLayer = null;
@@ -105,9 +103,6 @@ public class GuiSchematicControl extends GuiScreenBase {
         this.buttonList.clear();
 
         int id = 0;
-
-        this.btnConfig = new GuiButton(id++, 10, 10, 80, 20, I18n.format(Names.Gui.Control.CONFIG));
-        this.buttonList.add(this.btnConfig);
 
         this.numericX = new GuiNumericField(this.fontRendererObj, id++, this.centerX - 50, this.centerY - 30, 100, 20);
         this.buttonList.add(this.numericX);
@@ -316,10 +311,6 @@ public class GuiSchematicControl extends GuiScreenBase {
             return;
         }
         if (guiButton.enabled) {
-            if (guiButton.id == this.btnConfig.id) {
-                this.mc.displayGuiScreen(new GuiModConfig(this));
-                return;
-            }
             if (this.schematic == null) {
                 return;
             }
