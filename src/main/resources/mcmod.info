@@ -5,7 +5,7 @@
         "description": "A visual schematic editor for Minecraft 1.7.10 - fork of Schematica with import/export support for .schematic, .litematic, .nbt files",
         "version": "${version}",
         "mcversion": "1.7.10",
-        "url": "https://github.com/Yuno1113/Schematica-Neo",
+        "url": "https://github.com/YunoSeng/Schematica-Neo",
         "updateUrl": "",
         "authorList": ["Yuno"],
         "credits": "",
